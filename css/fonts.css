@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url('fonts/Anonymous Pro.eot'); /* IE9 Compat Modes */
+	src: url('fonts/Anonymous Pro.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Anonymous Pro.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Anonymous Pro.svg') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bowman';
+	src: url('fonts/Bowman.eot'); /* IE9 Compat Modes */
+	src: url('fonts/Bowman.woff') format('woff'), /* Pretty Modern Browsers */
+       url('onts/Bowman.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Bowman.svg') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,318 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, body *{
+	font-family: 'Bowman', 'Anonymous Pro', monospace;
+}
+body{
+  padding-bottom: 0;
+}
+
+/* Additional color styling */
+a.link{
+  color:#fff;
+  font-size: calc(13px + 1vw);
+  background:#5FBFF9;
+  background-color:#5FBFF9;
+  padding: 2px 8px;
+  text-decoration: none !important;
+  border-radius:3px;
+  transition:all .15s ease;
+  -webkit-transition:all .15s ease;
+}
+a.link:hover{
+  color:#5FBFF9;
+  background:#fff;
+  box-shadow:0 0 0 1px #5FBFF9,0 -2px 5px rgba(0, 0, 0, 0.05),0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.inbetweeners{
+  white-space:pre-wrap;  
+}
+.inbetweeners:after{
+  content: "";
+}
+
+span {
+  display: inline;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: calc(13px + 1vw);
+  color: #f1f2f2;
+}
+
+.smooth-align {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inherit;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.smooth-align:before, .smooth-align:after {
+  display: block;
+  content: "";
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: -webkit-box-flex 1s, -webkit-flex 1s;
+  transition: -webkit-box-flex 1s, -webkit-flex 1s;
+  transition: flex 1s;
+  transition: flex 1s, -webkit-box-flex 1s, -webkit-flex 1s, -ms-flex 1s;
+}
+.smooth-align.left:before {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+.smooth-align.left:after {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.smooth-align.right:before {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.smooth-align.right:after {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+.smooth-align.center:before, .smooth-align.center:after {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.smooth-align.center{
+  text-align: center;
+}
+
+.debug {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.before, .after {
+  display: inline-block;
+  padding: 1vw 3vw;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.smooth-align {
+  margin-bottom: 3px;
+}
+
+body {
+  padding: 5vw;
+}
+
+h1 {
+  font-size: calc(20px + 1.5vw);
+  margin-bottom: 5vw;
+}
+
+h2 {
+  font-size: calc(15px + 1vw);
+}
+html {
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*background: radial-gradient(circle, #fff 0%, #aaa 100%) no-repeat; */
+  /*overflow-x: hidden;
+  overflow-y: hidden;*/
+}
+#description-para{
+  line-height: 6vh;
+}
+.resume-title{
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: calc(38px + 1vw);
+	color: #f1f2f2;
+}
+.tagline-text{
+	font-weight: lighter;
+	font-size: calc(23px + 1vw);
+	color: #f1f2f2;
+}
+.experience-text{
+	margin-top: 4vh;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: calc(26px + 1vw);
+	color: #f1f2f2;
+}
+.company-name{
+	font-variant: normal;
+	font-weight: normal;
+	font-size: calc(25px + 1vw);
+	color: #f1f2f2;
+	text-align:center;
+}
+.normal-text{
+	font-variant: normal;
+	font-weight: normal;
+	font-size: calc(13px + 1vw);
+	color: #f1f2f2;
+	line-height: 6.1vh;
+}
+/* use this for clearing floats */
+.normal-text:after { 
+    content: " "; 
+    display: block;
+    clear: both;
+} 
+.experience-wrap .breakup-container span:nth-child(1){
+	float:left;
+	/*position: absolute;
+	left:0;*/
+
+	width: 48%;
+	display: inline-block;
+	max-width: 48%;
+	text-align: left;
+}
+
+.experience-wrap .breakup-container span:nth-child(2){
+	float:right;
+	/*position: absolute;
+	right:0;*/
+	
+	width: 48%;
+	display: inline-block;
+	max-width: 48%;
+	text-align: left;
+}
+
+.timer, .intern-time, .college-time{
+	font-variant: normal;
+	font-weight: lighter;
+	font-size: calc(8px + 1vw);
+	color: #f1f2f2;
+}
+
+.experience-wrap .normal-text{
+  margin-bottom: 10vh;
+}
+
+div{
+	display:block;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #333, #ccc, #333);
+}
+
+.time{
+	font-size:35px;
+	position:fixed;
+	top:0;
+	right:0;
+}
+
+ul{
+  margin-top: 1.3vh;
+  line-height: 5vh;
+}
+ul li:before{
+    content: "\0BB \020";
+};
+.block-it{
+  display: inline-block;
+  width: 100%;
+}
+.reference{
+  margin-top: 5vh;
+}
+#ref-bar-3{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+#degree{
+  line-height: 10vh;
+}
+@media only screen and (max-width: 480px) {
+  #description-para{
+    line-height:4vh;
+  }
+  .normal-text{
+    line-height: 3.5vh;
+  }
+  ul{
+    line-height: 3vh;
+  }
+  #degree{
+    line-height: 5vh;
+  }
+}
