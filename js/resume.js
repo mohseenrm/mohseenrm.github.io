@@ -1,4 +1,4 @@
-function hideEverybody(){
+	function hideEverybody(){
 	$("#name").hide();
 	$("#tagline-text").hide();
 	$("#who-bar-1").hide();
@@ -42,7 +42,7 @@ $(document).ready(function(){
 		fontRatio: 100
 	});
 	
-	hideEverybody();
+	//hideEverybody();
 	
 	var diff = getNiceTime(new Date("August 3, 2015"), new Date(), 5, false);;
 
