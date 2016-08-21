@@ -50,7 +50,7 @@ body, body *{
 body{
   padding-bottom: 0;
 }
-#name, #tagline-text, #who-bar-1, #who-bar-2, #who, #description-para, #exp-bar-1, #exp-bar-2, #exp, #btci, #btci-time-1, #btci-time-2, #btci-para-1, #btci-para-2, #bar-1, #intern-title, #intern-time-1, #intern-time-2, #intern-para, #edu-bar-1, #edu-bar-2, #edu, #degree, #degree-name, #degree-title, #tech, #tech-bar-1, #tech-bar-2, #tech-para-1, #tech-para-2, #ref-bar-1, #ref, #ref-bar-2, #reference-1, #reference-2, #js-mobile{
+#name, #tagline-text, #who-bar-1, #who-bar-2, #who, #description-para, #exp-bar-1, #exp-bar-2, #exp, #btci, #btci-time-1, #btci-time-2, #btci-para-1, #btci-para-2, #bar-1, #intern-title, #intern-time-1, #intern-time-2, #intern-para, #edu-bar-1, #edu-bar-2, #edu, #degree, #degree-name, #degree-title, #tech, #tech-bar-1, #tech-bar-2, #tech-para-1, #tech-para-2, #ref-bar-1, #ref, #ref-bar-2, #reference-1, #reference-2, #js-mobile, #degree-time-2, #asu, #ms{
   display: none;
 }
 #js-mobile{
@@ -304,20 +304,23 @@ ul li:before{
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
-#degree{
+#degree, #ms{
   line-height: 10vh;
+}
+#asu-container{
+  line-height: 6.1vh;
 }
 @media only screen and (max-width: 480px) {
   #description-para{
     line-height:4vh;
   }
-  .normal-text{
+  .normal-text, #asu-container{
     line-height: 3.5vh;
   }
   ul{
     line-height: 3vh;
   }
-  #degree{
+  #degree, #ms{
     line-height: 5vh;
   }
   #js-mobile{

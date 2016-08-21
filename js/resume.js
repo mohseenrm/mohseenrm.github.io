@@ -1,18 +1,22 @@
 $(document).ready(function(){
-	
+	//#degree-time-2
+	//edu-bar-3
 	$("body").flowtype({
 		minFont: 10,
 		fontRatio: 100
 	});
 	
-	var diff = getNiceTime(new Date("August 3, 2015"), new Date(), 5, false);;
+	var diff = getNiceTime(new Date("August 18, 2016"), new Date(), 5, false);;
 
 	$(".timer").html(diff);
 
 	setInterval(function(){
-		diff = getNiceTime(new Date("August 3, 2015"), new Date(), 5, false);
+		diff = getNiceTime(new Date("August 18, 2016"), new Date(), 5, false);
 		$(".timer").html(diff);
 	}, 1000);
+
+	barclaysTime = getNiceTime(new Date("August 3, 2015"), new Date("July 22, 2016"), 5, false);
+	$(".barclays-time").html(barclaysTime);
 
 	diff = getNiceTime(new Date("May 1, 2014"), new Date("July 14, 2014"), 2, false);
 	$(".intern-time").html(diff);
@@ -31,7 +35,7 @@ $(document).ready(function(){
 		"text": $("#tagline-text").html(),
 		"fps": 30
 	});
-
+	//for mobile devices
 	if($("#js-mobile").css("opacity") == "1"){
 		$("#who-bar-1").delay(400).fadeIn(1000);
 		$("#who-bar-2").delay(400).fadeIn(1000);
@@ -78,7 +82,6 @@ $(document).ready(function(){
 		$("#ref-bar-1").delay(5000).fadeIn(1000);
 		$("#ref-bar-2").delay(5000).fadeIn(1000);
 		$("#ref").delay(5000).fadeIn(1000);
-
 
 		$("#reference-1").delay(5400).fadeIn(1000);
 		$("#reference-2").delay(5400).fadeIn(1000);
@@ -156,7 +159,6 @@ $(document).ready(function(){
 				"text": $("#btci-time-2").html(),
 				"fps": 30
 			});
-
 		}, 400);
 
 		setTimeout(function(){
@@ -222,7 +224,32 @@ $(document).ready(function(){
 			});
 
 		}, 870);
+		//updated for ASU
+		setTimeout(function(){
+			$("#edu-bar-3").fadeIn("slow");
+		}, 920);
+		//check the case for #ms and why this does not work
+		setTimeout(function(){
+			$("#ms").fadeIn("fast")
+					.shuffleLetters({
+						"text": $("#ms").html(),
+						"fps": 30
+					});
 
+			$("#asu").fadeIn("fast")
+					.shuffleLetters({
+						"text": $(this).text(),
+						"fps": 30
+					});
+		}, 970);
+
+		setTimeout(function(){
+			$("#degree-time-2").fadeIn("slow")
+				.shuffleLetters({
+					"text": $(this).text(),
+					"fps": 30
+				});
+		}, 1000);
 		setTimeout(function(){
 
 			$("#degree").fadeIn("fast");
@@ -242,14 +269,14 @@ $(document).ready(function(){
 				"text": $("#degree-time").html(),
 				"fps": 30
 			});
-		}, 950);
+		}, 1100);
 
 		setTimeout(function(){
 
 			$("#tech-bar-1").fadeIn("slow");
 			$("#tech-bar-2").fadeIn("slow");
 
-		}, 1000);
+		}, 1200);
 
 		setTimeout(function(){
 
@@ -270,12 +297,12 @@ $(document).ready(function(){
 				"text": $("#tech-para-2").html(),
 				"fps": 45
 			});
-		}, 1050);
+		}, 1250);
 
 		setTimeout(function(){
 			$("#ref-bar-1").fadeIn("slow");
 			$("#ref-bar-2").fadeIn("slow");
-		}, 1100);
+		}, 1350);
 
 		setTimeout(function(){
 			$("#ref").fadeIn("fast");
@@ -283,7 +310,7 @@ $(document).ready(function(){
 				"text": $("#ref").html(),
 				"fps": 30
 			});
-		}, 1150);
+		}, 1450);
 
 		setTimeout(function(){
 			$("#reference-1").fadeIn("fast");
@@ -298,7 +325,7 @@ $(document).ready(function(){
 				"text": $("#reference-2").html(),
 				"fps": 45
 			});
-		}, 1200);
+		}, 1500);
 	}
 	
 });
