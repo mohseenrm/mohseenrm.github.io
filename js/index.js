@@ -17,7 +17,7 @@ var help_design = "Glad you asked &#x263B;<br>" + "<br>" +
 " <span style='color:#a8e6cf;'>&#x276F;</span> animation sprites, <br>" +
 " <span style='color:#a8e6cf;'>&#x276F;</span> Vector Illustrations, <br>" +
 " <span style='color:#a8e6cf;'>&#x276F;</span> and web design <br>"  +
-" <span style='color:#a8e6cf;'>&#x276F;</span> <a href='http://www.mohseen.co.nf/'>Design Samples</a>";
+" <span style='color:#a8e6cf;'>&#x276F;</span> <a href='https://mohseenrm.github.io/'>Design Samples</a>";
 
 var help_resume = "Glad you asked &#x263B;<br>" + "<br>" +
 " &#x2756; Hold on for a moment <br>" +
@@ -38,7 +38,7 @@ var help_contact = "Glad you asked &#x263B;<br>" + "<br>" +
 " <span style='color:#a8e6cf;'>&#x276F;</span> <a class='link-1' href='https://plus.google.com/+mohseenmukaddam/posts'>Google+</a> <br>" +
 " <span style='color:#a8e6cf;'>&#x276F;</span> <a class='link-1' href='https://twitter.com/ManUBayern'>Twitter</a> <br>" +
 " <span style='color:#a8e6cf;'>&#x276F;</span> <a class='link-1' href='https://in.linkedin.com/in/mohseen-mukaddam-b608a26a'>LinkedIn</a> <br>" +
-" <span style='color:#a8e6cf;'>&#x276F;</span> <a class='link-1' href='https://github.com/mohseen3'>Github</a> <br>" +
+" <span style='color:#a8e6cf;'>&#x276F;</span> <a class='link-1' href='https://github.com/mohseenrm'>Github</a> <br>" +
 " <span style='color:#a8e6cf;'>&#x276F;</span> <a class='link-1' href='mailto:mohseenrm@hotmail.com'>Plain old mail</a>";
 
 var help_training = "Glad you asked &#x263B;<br>" + "<br>" +
