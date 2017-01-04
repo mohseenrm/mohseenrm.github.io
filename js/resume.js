@@ -23,6 +23,11 @@ $(document).ready(function(){
 
 	diff = getNiceTime(new Date("June 1, 2011"), new Date("July 1, 2015"), 2, false);
 	$(".college-time").html(diff);
+
+	$(".college-time").hide();
+
+	$("#edu-bar-3").hide();
+	$("#ref-bar-3").hide();
 	
 	$("#name").fadeIn("fast");
 	$("#name").shuffleLetters({
@@ -68,23 +73,29 @@ $(document).ready(function(){
 		$("#edu-bar-2").delay(3400).fadeIn(1000);
 		$("#edu").delay(3400).fadeIn(1000);
 
-		$("#degree").delay(3800).fadeIn(1000);
-		$("#degree-name").delay(3800).fadeIn(1000);
-		$("#degree-time").delay(3800).fadeIn(1000);
+		$("#edu-bar-3").delay(3800).fadeIn(1000);
+		$("#ms").delay(3800).fadeIn(1000);
+		$("#asu").delay(3800).fadeIn(1000);
+		$("#degree-time-2").delay(3800).fadeIn(1000);
+		
 
-		$("#tech-bar-1").delay(4200).fadeIn(1000);
-		$("#tech-bar-2").delay(4200).fadeIn(1000);
+		$("#degree").delay(4200).fadeIn(1000);
+		$("#degree-name").delay(4200).fadeIn(1000);
+		$("#degree-time").delay(4200).fadeIn(1000);
 
-		$("#tech").delay(4600).fadeIn(1000);
-		$("#tech-para-1").delay(4600).fadeIn(1000);
-		$("#tech-para-2").delay(4600).fadeIn(1000);
+		$("#tech-bar-1").delay(4600).fadeIn(1000);
+		$("#tech-bar-2").delay(4600).fadeIn(1000);
 
-		$("#ref-bar-1").delay(5000).fadeIn(1000);
-		$("#ref-bar-2").delay(5000).fadeIn(1000);
-		$("#ref").delay(5000).fadeIn(1000);
+		$("#tech").delay(5000).fadeIn(1000);
+		$("#tech-para-1").delay(5000).fadeIn(1000);
+		$("#tech-para-2").delay(5000).fadeIn(1000);
 
-		$("#reference-1").delay(5400).fadeIn(1000);
-		$("#reference-2").delay(5400).fadeIn(1000);
+		$("#ref-bar-1").delay(5400).fadeIn(1000);
+		$("#ref-bar-2").delay(5400).fadeIn(1000);
+		$("#ref").delay(5400).fadeIn(1000);
+
+		$("#reference-1").delay(5800).fadeIn(1000);
+		$("#reference-2").delay(5800).fadeIn(1000);
 	}
 	else{
 		setTimeout(function(){
