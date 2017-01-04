@@ -93,6 +93,8 @@ $(document).ready(function(){
 		$("#ref-bar-1").delay(5400).fadeIn(1000);
 		$("#ref-bar-2").delay(5400).fadeIn(1000);
 		$("#ref").delay(5400).fadeIn(1000);
+		$("#ref-bar-3").delay(5400).fadeIn(1000);
+		
 
 		$("#reference-1").delay(5800).fadeIn(1000);
 		$("#reference-2").delay(5800).fadeIn(1000);
