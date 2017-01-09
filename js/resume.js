@@ -332,7 +332,7 @@ $(document).ready(function(){
 				"text": $("#reference-1").html(),
 				"fps": 45
 			});
-
+			$("#ref-bar-3").fadeIn("fast");
 			$("#reference-2").fadeIn("fast");
 			$("#reference-2").shuffleLetters({
 				"text": $("#reference-2").html(),
