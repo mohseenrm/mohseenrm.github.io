@@ -1,4 +1,18 @@
 # Source code for mohseenrm.github.io
 
 
-![Build Status](https://travis-ci.com/mohseenrm/second_website.svg?token=CqDroFQpz5UCVrR38qQa&branch=master)
+<table>
+  <thead>
+    <tr>
+      <th>Linux</th>
+      <th>OS X</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" align="center">
+        <a href="https://travis-ci.org/mohseenrm/mohseenrm.github.io"><img src="https://travis-ci.org/mohseenrm/mohseenrm.github.io.svg?branch=master" target="_blank"></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
