@@ -51,7 +51,7 @@ THE SOFTWARE.
 	} );
 
 	const onCompleteCycle = () => {
-		console.log( 'Cycle complete' );
+		// console.log( 'Cycle complete' );
 		if ( /loaded|complete/.test( document.readyState ) ){
 			// console.log('content loaded');
 			tl.pause();

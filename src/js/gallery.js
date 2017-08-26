@@ -62,7 +62,6 @@ const createPictures = ( number ) => {
 		limit = ( number + imagesLoaded );
 
 	for( let i = imagesLoaded; i < limit; i++ ){
-		// TODO: add optimized image here
 		picture = document.createElement( 'div' );
 
 		picture.setAttribute( 'style', `
@@ -142,8 +141,8 @@ const generateIdFromIndex = ( index ) => {
 };
 
 const clearSlideshow = () => {
-	console.log( 'slidesLoaded: ', slidesLoaded );
-	console.log( 'picturesLoaded: ', imagesLoaded );
+	// console.log( 'slidesLoaded: ', slidesLoaded );
+	// console.log( 'picturesLoaded: ', imagesLoaded );
 
 	for( let i = 0; i < ( slidesLoaded ); i++ ){
 		if( cache[ `slide_${ i }` ] === undefined )
@@ -179,8 +178,7 @@ const onClickEventHandler = ( e ) => {
 	const loadButton = document.querySelector( '.wrapper--button' );
 
 	e.preventDefault();
-/*	console.log('checking out e: ', e);
-	console.log('checking out this: ', this);*/
+
 	addClass( loadButton, 'loading' );
 	createPictures( 6 );
 	createSlides( 6 );
@@ -191,7 +189,6 @@ const onClickEventHandler = ( e ) => {
 
 const galleryLeftEventHandler = ( e ) => {
 	e.preventDefault();
-	console.log( 'left clicked' );
 
 	removeClass( cache.current, 'show' );
 
@@ -207,7 +204,7 @@ const galleryLeftEventHandler = ( e ) => {
 		cache[ generateIdFromIndex( `${ next }` ) ] = document.getElementById( generateIdFromIndex( `${ next }` ) );
 
 	const nextSlide = cache[ generateIdFromIndex( `${ next }` ) ];
-	console.log( 'next id: ', generateIdFromIndex( `${ next }` ) );
+	// console.log( 'next id: ', generateIdFromIndex( `${ next }` ) );
 
 	removeClass( nextSlide, 'slideshow--slide' );
 	addClass( nextSlide, 'slideshow--slide show' );
@@ -217,7 +214,6 @@ const galleryLeftEventHandler = ( e ) => {
 
 const galleryRightEventHandler = ( e ) => {
 	e.preventDefault();
-	console.log( 'right clicked' );
 
 	removeClass( cache.current, 'show' );
 
@@ -233,7 +229,7 @@ const galleryRightEventHandler = ( e ) => {
 		cache[ generateIdFromIndex( `${ next }` ) ] = document.getElementById( generateIdFromIndex( `${ next }` ) );
 
 	const nextSlide = cache[ generateIdFromIndex( `${ next }` ) ];
-	console.log( 'next id: ', generateIdFromIndex( `${ next }` ) );
+	// console.log( 'next id: ', generateIdFromIndex( `${ next }` ) );
 
 	removeClass( nextSlide, 'slideshow--slide' );
 	addClass( nextSlide, 'slideshow--slide show' );
