@@ -52,6 +52,7 @@ const references = {
 		position: 'Messaging Engineer, Barclays'
 	}
 };
+
 ( () => {
 	const text = document.getElementById( 'reference-text' ),
 		author = document.querySelector( '.wrapper--author' ),
