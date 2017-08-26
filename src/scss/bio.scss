@@ -1,0 +1,162 @@
+@import 'flex';
+// @import 'fonts';
+//device widths
+$phone: "(max-width: 420px)";
+$phablet: "(min-width: 421px) and (max-width: 720px)";
+$tablet: "(min-width: 721px) and (max-width: 1024px)";
+$desktop: "(min-width: 1025px) and (max-width: 1440px)";
+#screen-bio {
+    @include flexbox;
+    height: auto;
+    width: 100vw;
+    background: #ecf0f1;
+    &>.bio-wrapper {
+        @include flexbox;
+        width: 100vw;
+        height: auto;
+        @media #{$phone} {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bio-wrapper--gif {
+            @include flexbox;
+            width: 35%;
+            height: 100%;
+            @media #{$phone} {
+                height: auto;
+                margin-bottom: 23vh;
+                margin-top: 10vh;
+            }
+        }
+        .bio-wrapper--text {
+            @include flexbox;
+            // justify-content: flex-start; // align-items: center;
+            justify-content: center;
+            line-height: 6vh;
+            width: 65%;
+            // height: 100%;
+            min-height: 100vh;
+
+            flex-wrap: nowrap;
+            flex-direction: column;
+            font-family: 'Merriweather','Helvetica', serif;
+            font-weight: 300;
+            color: #000;
+            font-size: 2.5rem;
+            text-align: left;
+            padding: 4%;
+            padding-top: 6%;
+            @media #{$phone} {
+                height: auto;
+                width: 80vw;
+                text-align: justify;
+                font-size: 2rem;
+                line-height: 5vh;
+                padding-top: 10vh;
+            }
+        }
+    }
+}
+
+.coffee-cup-container>svg>path {
+    stroke: none;
+}
+
+@mixin moveAndFadeAnimation($distance, $duration, $delay) {
+    animation: move-and-fade $duration linear infinite;
+    animation-delay: $delay;
+    @keyframes move-and-fade {
+        0% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(-$distance);
+            opacity: 0;
+        }
+    }
+}
+
+$border-color: #5D5D5D;
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    @media #{$phone} {
+        height: auto;
+    }
+}
+
+.steam-container {
+    width: 75%;
+    height: 65%;
+    margin-left: 10px;
+}
+
+.coffee-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.coffee-cup {
+    width: 100px;
+}
+
+.squiggle-container {
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+}
+
+.squiggle-container-1 {
+    transform: translateY(10px);
+    .squiggle {
+        @include moveAndFadeAnimation(10px, 2.5s, .2s);
+        width: 10px;
+    }
+}
+
+.squiggle-container-2 {
+    transform: translateY(0px);
+    .squiggle {
+        @include moveAndFadeAnimation(20px, 2.5s, 0s);
+        width: 10px;
+    }
+}
+
+.squiggle-container-3 {
+    transform: translateY(15px);
+    .squiggle {
+        @include moveAndFadeAnimation(15px, 2.5s, .4s);
+        width: 10px;
+    }
+}
+
+.squiggle {
+    stroke-dasharray: 100; //animation: dash 10s linear infinite;
+    path {
+        stroke: $border-color;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    50% {
+        stroke-dashoffset: 500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

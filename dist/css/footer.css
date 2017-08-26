@@ -1,0 +1,35 @@
+#footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 25vh; }
+  #footer .wrapper {
+    width: 100vw;
+    background: #f2994a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f2994a, #f2c94c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f2994a, #f2c94c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; }
+    #footer .wrapper .fa {
+      font-size: 3.5rem;
+      margin: 1.75%;
+      transition: all 0.5s ease-in; }
+      #footer .wrapper .fa:hover {
+        transition: all 0.3s ease-out;
+        color: #000000; }
+    #footer .wrapper .fa.fa-github {
+      width: auto; }
+
+.footer--wrapper--link {
+  color: white;
+  margin: 3%; }
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,91 @@
+#screen-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 130vh;
+  width: 100vw;
+  background: #000; }
+  #screen-5 .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    flex-wrap: nowrap; }
+    @media (max-width: 420px) {
+      #screen-5 .wrapper {
+        padding-top: 6vh;
+        padding-bottom: 6vh; } }
+    #screen-5 .wrapper--line {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 3px;
+      width: 75vw;
+      background: #fff;
+      justify-content: center;
+      align-items: center; }
+    #screen-5 .wrapper--author {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: "Merriweather", "Didot", "Helvetica", serif;
+      color: #f7f7f7;
+      font-size: 2.2rem;
+      margin: 2%;
+      margin-bottom: 4%;
+      margin-top: 3vh;
+      transition: all 0.1s ease-in-out; }
+      @media (max-width: 420px) {
+        #screen-5 .wrapper--author {
+          font-size: 2rem; } }
+      #screen-5 .wrapper--author--position {
+        width: 100vw;
+        color: #cecece;
+        font-size: 1.6rem;
+        font-style: italic;
+        margin-top: 2vh;
+        letter-spacing: 0.25rem;
+        line-height: 4vh; }
+    #screen-5 .wrapper--text {
+      transition: all 0.1s ease-in-out;
+      font-family: "Merriweather", "Didot", "Helvetica", serif;
+      color: #F2994A;
+      padding-left: 6%;
+      padding-right: 6%;
+      font-size: 2.8rem;
+      font-weight: 100;
+      text-align: center;
+      line-height: 6vh;
+      margin-top: 4%;
+      /* background: #f2994a;
+      background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
+      background: linear-gradient(to top, #f2994a, #f0cb35);
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; */ }
+      @media (max-width: 420px) {
+        #screen-5 .wrapper--text {
+          text-align: justify;
+          font-size: 1.9rem;
+          line-height: 5vh; } }
+
+.fade-out {
+  opacity: 0;
+  transition: all 0.1s ease-out; }
+
+/*# sourceMappingURL=screen-5.css.map */

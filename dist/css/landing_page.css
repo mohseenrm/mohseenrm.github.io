@@ -1,0 +1,105 @@
+#screen-landing {
+  max-width: 100vw;
+  max-height: 100vh;
+  min-width: 60vw;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  background: #000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  /* -webkit-box-shadow: inset 0px 0px 0px 10px #fff;
+  -moz-box-shadow: inset 0px 0px 0px 10px #fff;
+  box-shadow: inset 0px 0px 0px 10px #fff; */ }
+
+.landing--main-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* position: absolute;
+  top: 50%; */
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Didot', 'Helvetica', serif;
+  font-size: 12rem;
+  color: #f7f7f7;
+  padding: 8vh;
+  font-weight: 500;
+  /* outline: solid 5px #f2c94c;
+  outline-offset: 7px; */
+  /* background: #f2994a;
+  background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
+  background: linear-gradient(to top, #f2994a, #f0cb35);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  z-index: 10; }
+  @media (max-width: 420px) {
+    .landing--main-title {
+      font-size: 5.5rem;
+      padding: 2vh;
+      margin-top: 12vh; } }
+
+.screen-landing--border-box {
+  width: auto;
+  height: 100%;
+  flex-grow: 2;
+  background: #000000;
+  overflow-x: hidden; }
+  .screen-landing--border-box:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    opacity: 0.35; }
+
+.light-weight {
+  font-weight: 100; }
+
+.heavy-weight {
+  font-weight: 500; }
+
+.psuedo-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-grow: 2;
+  justify-content: flex-start;
+  align-items: flex-end; }
+  @media (max-width: 420px) {
+    .psuedo-wrapper {
+      justify-content: center;
+      align-items: center; } }
+
+#bgvid {
+  background-size: contain;
+  background-attachment: fixed;
+  max-width: 200%;
+  height: auto;
+  max-height: 100vh; }
+  @media (max-width: 420px) {
+    #bgvid {
+      max-width: 400%;
+      transform: translateX(-50%); } }
+
+/*# sourceMappingURL=landing_page.css.map */

@@ -1,0 +1,140 @@
+@import 'flex';
+@import 'underline';
+$tcolor: rgba(35, 35, 35, 0.8);
+
+/* textcolor */
+
+$uline: rgba(255, 255, 255, 1);
+$phone: "(max-width: 420px)";
+$phablet: "(min-width: 421px) and (max-width: 720px)";
+$tablet: "(min-width: 721px) and (max-width: 1024px)";
+$desktop: "(min-width: 1025px) and (max-width: 1440px)";
+
+/* underline color */
+
+
+$background: rgba(41, 128, 185, 1.0);
+#screen-3b {
+    @include flexbox;
+    width: 100%;
+    height: auto;
+	font-size: 3rem;
+	color: #000;
+	background: #ecf0f1;
+    & .wrapper {
+        width: 100%;
+        // min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+		font-family: 'Merriweather', 'Helvetica', sans-serif;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+        @media #{$phone} {
+            align-content: space-around;
+            padding-top: 8vh;
+        }
+        &--block {
+            display: flex;
+            width: 35%;
+            height: auto;
+            min-height: 10%;
+            flex-direction: column;
+            padding: 3%;
+            flex-grow: 1;
+            flex-shrink: 10;
+            margin-bottom: 5%;
+            margin-bottom: 3vh;
+			// background: green;
+            &--title {
+                width: 100%;
+                margin-bottom: 4vh;
+                font-size: 3.5rem;
+                font-weight: 500;
+                letter-spacing: 0.18rem;
+                text-align: right;
+                color: #4E0E2E;
+                @media #{$phone} {
+                    height: auto;
+                    font-size: 2.5rem;
+                }
+            }
+            &--text {
+                color: #000000;
+                font-size: 2.5rem;
+                font-weight: 100;
+                line-height: 5.3vh;
+                text-align: right;
+                @media #{$phone} {
+                    height: auto;
+                    font-size: 2rem;
+                }
+            }
+            &:nth-child(2) {
+                &>.wrapper--block--text {
+                    text-align: left;
+                }
+                &>.wrapper--block--title {
+                    text-align: left;
+                }
+            }
+            &:nth-child(4) {
+                justify-content: center;
+                align-items: center;
+                &>.wrapper--block--text {
+                    width: auto;
+                    text-align: center;
+                }
+                &>.wrapper--block--title {
+                    text-align: center;
+                }
+            }
+            &-large {
+                width: 100%;
+                height: auto;
+                min-height: 15%;
+                display: flex;
+                flex-direction: row;
+                // padding: 3%;
+                // padding-bottom: 4vh;
+                flex-grow: 1;
+                flex-shrink: 10;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: center;
+                margin-bottom: 3vh;
+                &--title {
+                    width: 100%;
+                    margin-bottom: 5vh;
+                    font-size: 3.5rem;
+                    font-weight: 500;
+                    letter-spacing: 0.18rem;
+                    text-align: center;
+                    color: #4E0E2E;
+                    
+                }
+                &--text {
+                    display: flex;
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                    line-height: 5.3vh;
+                    text-align: center;
+                    color: #000000;
+                    &:nth-child(2) {
+                        text-align: center;
+                    }
+                    margin-left: 2.5vw;
+                    margin-right: 2.5vw;
+                }
+            }
+        }
+    }
+}
+
+.wrapper--text {
+    color: #000;
+    font-size: 3rem; // @include underline(1.15em, 0.04em, $uline, $background);
+}
