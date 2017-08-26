@@ -143,6 +143,7 @@ const references = {
 	author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
 
 	const rotateReferences = () => {
+		// console.log('playhead: ', playHead);
 		playHead = playHead === numberOfAuthors - 1 ? 0 : playHead + 1;
 		text.style.opacity = 0;
 

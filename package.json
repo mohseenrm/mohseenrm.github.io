@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "build:watch": "babel -w js/ -d dist/ -s",
-    "build:webpack": "./node_modules/.bin/webpack",
+    "build:webpack": "\"./node_modules/.bin/webpack\"",
     "build:webpack:production": "./node_modules/.bin/webpack -p",
     "build:webpack:windows": "node_modules\\.bin\\webpack",
     "build:webpack:windows:production": "node_modules\\.bin\\webpack -p",
@@ -54,8 +54,5 @@
     "webpack": "^2.5.0",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {
-    "global": "^4.3.2",
-    "lighthouse": "^2.2.1"
-  }
+  "dependencies": {}
 }
