@@ -1,15 +1,13 @@
 {
-  "name": "second_website",
-  "version": "1.2.227",
-  "description": "second website",
+  "name": "mohseenrm.github.io",
+  "version": "2.0.0",
+  "description": "personal website",
   "main": "index.html",
   "scripts": {
     "build": "gulp build",
     "build:watch": "babel -w js/ -d dist/ -s",
     "build:webpack": "\"./node_modules/.bin/webpack\"",
-    "build:webpack:production": "./node_modules/.bin/webpack -p",
-    "build:webpack:windows": "node_modules\\.bin\\webpack",
-    "build:webpack:windows:production": "node_modules\\.bin\\webpack -p",
+    "build:webpack:production": "\"./node_modules/.bin/webpack\" -p",
     "devServer": "./node_modules/.bin/webpack-dev-server --progress --colors",
     "compile": "sass --watch src/scss:dist/css",
     "build:production": "gulp",
@@ -18,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohseenrm/second_website.git"
+    "url": "git+git@github.com:mohseenrm/mohseenrm.github.io.git"
   },
   "keywords": [
     "website"
@@ -26,9 +24,9 @@
   "author": "Mohseen Mukaddam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mohseenrm/second_website/issues"
+    "url": "https://github.com/mohseenrm/mohseenrm.github.io/issues"
   },
-  "homepage": "https://github.com/mohseenrm/second_website#readme",
+  "homepage": "https://mohseenrm.github.io",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-cli": "^6.18.0",
