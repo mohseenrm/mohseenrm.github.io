@@ -134,17 +134,18 @@ font-style: italic;
 }
 
 ul.info{
-width: 500px;
+/* width: 500px; */
+width: 100%;
 padding: 0;
 margin: 10px 0 0 0;
 float: left;
 }
 
-ul.info li{
+/* ul.info li{
 /* margin-bottom: 20px; */
-clear: both;
-float: left;
-}
+/* clear: both;
+float: left; */
+/* } */
 
 ul.info li p{
 font-size: 13px;
