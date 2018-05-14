@@ -23,7 +23,10 @@ float: left;
 
 div#content {
 width: 940px;
+
 height: 280px;
+/* height: 100%; */
+
 margin: 0 auto;
 clear: both;
 position: relative;
@@ -44,12 +47,19 @@ height: auto;
 /* end hack */
 /* ]]> */
 
+a{
+  text-decoration: none;
+}
+
 
 .logo_box{
 width: 349px;
 float: left;
 border-right: 1px solid #303030;
+
 height: 280px;
+height: 100%;
+
 position: relative;
 }
 
@@ -78,10 +88,17 @@ padding-top: 5px;
 }
 
 .main_box{
+display: flex;
+flex-direction: column;
+
+height: 95px;
+height: 100%;
+
+padding: 0 2.8vw 0 2.8vw;
+
 float: left;
 width: 500px;
-height: 95px;
-padding: 25px;
+/* padding: 25px; */
 }
 
 form{
@@ -171,6 +188,17 @@ background: url(../images/social.png) -72px bottom no-repeat;
 float: left;
 }
 
+/* Overrides */
+
+.social{
+  overflow: hidden;
+}
+
+.info{
+  display: flex;
+  height: 100%;
+}
+
 .field{
 float: left;
 background: url(../images/input.png) left top no-repeat;
@@ -206,3 +234,66 @@ padding-top: 20px;
 margin-right: 5px;
 }
 
+.icon-wrapper .social-icons.fa{
+  color: #ddd;
+  opacity: 0.25;
+
+  -webkit-transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+  transition: opacity 2s ease-out;
+}
+
+.social-icons.fa{
+  font-size: 3rem;
+}
+
+.icon-wrapper .social-icons.fa:hover{
+  /* color: white; */
+  -webkit-transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+  transition: opacity 2s ease-out;
+
+  opacity: 1;
+}
+
+.bold{
+  font-size: 3rem;
+}
+
+/* Animations */
+
+@-webkit-keyframes rise {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes rise {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes rise {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes rise {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fall {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes fall {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes fall {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fall {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
