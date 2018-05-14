@@ -1,0 +1,16 @@
+language: node_js
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - 6
+cache:
+  directories:
+    - "node_modules"
+
+script:
+  - ls -lart
+
+sudo: false
