@@ -277,10 +277,20 @@ margin-right: 5px;
 
 .icon-wrapper .social-icons.fa-facebook:hover{
   color: #3b5998;
+  mix-blend-mode: screen;
+  /* background-color: rgb(59, 2, 6); */
 }
 
 .icon-wrapper .social-icons.fa-github:hover{
   color: #c9510c;
+}
+
+.icon-wrapper .social-icons.fa-medium:hover{
+  color: #A3CD39;
+}
+
+.icon-wrapper .social-icons.fa-linkedin:hover{
+  color: #0087cb;
 }
 
 .bold{
