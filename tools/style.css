@@ -86,6 +86,7 @@ text-align:left;
 color: #fff;
 letter-spacing: -1px;
 font-size: 38px;
+font-size: 2.5rem;
 }
 
 h1 cufon{
@@ -255,10 +256,10 @@ margin-right: 5px;
   color: #ddd;
   opacity: 0.25;
 
-  -webkit-transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
-  transition: opacity 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
 }
 
 .social-icons.fa{
@@ -266,13 +267,20 @@ margin-right: 5px;
 }
 
 .icon-wrapper .social-icons.fa:hover{
-  /* color: white; */
-  -webkit-transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
-  transition: opacity 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
 
   opacity: 1;
+}
+
+.icon-wrapper .social-icons.fa-facebook:hover{
+  color: #3b5998;
+}
+
+.icon-wrapper .social-icons.fa-github:hover{
+  color: #c9510c;
 }
 
 .bold{
