@@ -27,10 +27,10 @@ float: left;
 }
 
 div#content {
-width: 100%;
+width: 75%;
 
 min-height: 20%;
-max-height: 33%;
+max-height: 55%;
 height: auto;
 
 margin: 0 auto;
@@ -105,8 +105,8 @@ padding-top: 5px;
 display: flex;
 flex-direction: column;
 
-height: 95px;
-height: 100%;
+/* height: 95px; */
+height: auto;
 
 padding: 0 0 0 2.8vw;
 
@@ -213,6 +213,7 @@ float: left;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: flex-end;
 
   height: 100%;
 }
@@ -252,28 +253,30 @@ padding-top: 20px;
 margin-right: 5px;
 }
 
-.icon-wrapper .social-icons.fa{
-  color: #ddd;
-  opacity: 0.2;
-
-  -webkit-transition: opacity 1.5s ease-out, color 0.5s ease-out;
-  -moz-transition: opacity 1.5s ease-out, color 0.5s ease-out;
-  -o-transition: opacity 1.5s ease-out, color 0.5s ease-out;
-  transition: opacity 1.5s ease-out, color 0.5s ease-out;
-}
-
 .social-icons.fa{
   font-size: 2.2rem;
 }
 
-.icon-wrapper .social-icons.fa:hover{
-  -webkit-transition: opacity 1.5s ease-out, color 0.5s ease-out;
-  -moz-transition: opacity 1.5s ease-out, color 0.5s ease-out;
-  -o-transition: opacity 1.5s ease-out, color 0.5s ease-out;
-  transition: opacity 1.5s ease-out, color 0.5s ease-out;
+.icon-wrapper .social-icons.fa{
+  color: #ddd;
+  opacity: 0.2;
 
-  opacity: 0.95;
+  -webkit-transition: opacity 1.25s ease-out, color 0.4s ease-out;
+  -moz-transition: opacity 1.25s ease-out, color 0.4s ease-out;
+  -o-transition: opacity 1.25s ease-out, color 0.4s ease-out;
+  transition: opacity 1.25s ease-out, color 0.4s ease-out;
 }
+
+.icon-wrapper .social-icons.fa:hover{
+  -webkit-transition: opacity 1.25s ease-out, color 0.4s ease-out;
+  -moz-transition: opacity 1.25s ease-out, color 0.4s ease-out;
+  -o-transition: opacity 1.25s ease-out, color 0.4s ease-out;
+  transition: opacity 1.25s ease-out, color 0.4s ease-out;
+
+  opacity: 1;
+}
+
+/* Actual hover over icon */
 
 .icon-wrapper .social-icons.fa-github:hover{
   color: #c9510c;
@@ -310,6 +313,57 @@ margin-right: 5px;
   color: #9afead;
   mix-blend-mode: screen;
 }
+
+/* Hover effect over region */
+
+.info:hover .social-icons{
+  opacity: 0.39;
+}
+
+.info:hover .social-icons.fa-github{
+  color: #c9510c;
+  color: #28cbfc;
+  mix-blend-mode: screen;
+}
+
+.info:hover .social-icons.fa-codepen{
+  color: #0087cb;
+  color: #35d1f0;
+  mix-blend-mode: screen;
+}
+.info:hover .social-icons.fa-facebook{
+  color: #3b5998;
+  color: #55e1d5;
+  mix-blend-mode: screen;
+}
+.info:hover .social-icons.fa-instagram{
+  color: #db3340;
+  color: #68ebc6;
+  mix-blend-mode: screen;
+}
+.info:hover .social-icons.fa-medium{
+  color: #A3CD39;
+  color: #77f2b9;
+  mix-blend-mode: screen;
+}
+.info:hover .social-icons.fa-linkedin{
+  color: #0087cb;
+  color: #85f9ac;
+  mix-blend-mode: screen;
+}
+.info:hover .social-icons.fa-paper-plane{
+  color: #0087cb;
+  color: #9afead;
+  mix-blend-mode: screen;
+}
+
+/* .info:hover .social-icons.fa-github{
+  color: #c9510c;
+  color: #28cbfc;
+  mix-blend-mode: screen;
+
+  opacity: 0.35;
+} */
 
 .bold{
   font-size: 3rem;
