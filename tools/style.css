@@ -125,7 +125,7 @@ height: 80px;
 
 h2{
 font-family: Georgia;
-color: #ffe400;
+color: #f5bd47;
 font-size: 24px;
 margin-bottom: 20px;
 }
@@ -254,43 +254,61 @@ margin-right: 5px;
 
 .icon-wrapper .social-icons.fa{
   color: #ddd;
-  opacity: 0.25;
+  opacity: 0.2;
 
-  -webkit-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out;
-  transition: all 2s ease-out;
+  -webkit-transition: opacity 1.5s ease-out, color 0.5s ease-out;
+  -moz-transition: opacity 1.5s ease-out, color 0.5s ease-out;
+  -o-transition: opacity 1.5s ease-out, color 0.5s ease-out;
+  transition: opacity 1.5s ease-out, color 0.5s ease-out;
 }
 
 .social-icons.fa{
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .icon-wrapper .social-icons.fa:hover{
-  -webkit-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out;
-  transition: all 2s ease-out;
+  -webkit-transition: opacity 1.5s ease-out, color 0.5s ease-out;
+  -moz-transition: opacity 1.5s ease-out, color 0.5s ease-out;
+  -o-transition: opacity 1.5s ease-out, color 0.5s ease-out;
+  transition: opacity 1.5s ease-out, color 0.5s ease-out;
 
-  opacity: 1;
-}
-
-.icon-wrapper .social-icons.fa-facebook:hover{
-  color: #3b5998;
-  mix-blend-mode: screen;
-  /* background-color: rgb(59, 2, 6); */
+  opacity: 0.95;
 }
 
 .icon-wrapper .social-icons.fa-github:hover{
   color: #c9510c;
+  color: #28cbfc;
+  mix-blend-mode: screen;
 }
-
+.icon-wrapper .social-icons.fa-codepen:hover{
+  color: #0087cb;
+  color: #35d1f0;
+  mix-blend-mode: screen;
+}
+.icon-wrapper .social-icons.fa-facebook:hover{
+  color: #3b5998;
+  color: #55e1d5;
+  mix-blend-mode: screen;
+}
+.icon-wrapper .social-icons.fa-instagram:hover{
+  color: #db3340;
+  color: #68ebc6;
+  mix-blend-mode: screen;
+}
 .icon-wrapper .social-icons.fa-medium:hover{
   color: #A3CD39;
+  color: #77f2b9;
+  mix-blend-mode: screen;
 }
-
 .icon-wrapper .social-icons.fa-linkedin:hover{
   color: #0087cb;
+  color: #85f9ac;
+  mix-blend-mode: screen;
+}
+.icon-wrapper .social-icons.fa-paper-plane:hover{
+  color: #0087cb;
+  color: #9afead;
+  mix-blend-mode: screen;
 }
 
 .bold{
