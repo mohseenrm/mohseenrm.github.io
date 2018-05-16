@@ -10,13 +10,7 @@ cache:
   directories:
     - "node_modules"
 
-before_install:
-  - npm i -g yarn@latest
-
-install:
-  - yarn install
-
 script:
-  - yarn test
+  - ls -lart
 
 sudo: false
