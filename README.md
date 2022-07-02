@@ -30,3 +30,9 @@ $ python scripts/main.py
 ```
 $ hugo server -D
 ```
+
+### Production build
+
+```shell
+$ hugo --gc --minify
+```
