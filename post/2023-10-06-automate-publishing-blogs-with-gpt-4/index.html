@@ -1,469 +1,476 @@
-<html><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=icon href=/images/favicon.svg><link rel=stylesheet href=/scss/global.min.87a7882d5243348fb0c83ac194b53da94bfc6bc3010061fd2a448d2d503a7024.css><link rel=stylesheet href=/css/prism.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel=stylesheet><link rel=stylesheet href=https://use.typekit.net/yka3uyp.css><title>Automate Publishing Blogs with GPT-4 | Mohseen</title><meta name=description content="Summer 2023 It&rsquo;s a long summer, and AI has been a buzz ever since Chat GPT was introduced to the general public. Since then it&rsquo;s been a roller coaster ride of AI advancements, and the latest one is GPT-4. While there is much heated debate on whether it&rsquo;s out to replace us or turn into a skynet version of virtual overlords, I wanted to see if it&rsquo;s any good at writing tech blogs."><meta property="og:title" content="Automate Publishing Blogs with GPT-4 | Mohseen"><meta property="og:site_name" content="Mohseen"><meta property="og:description" content="Summer 2023 It&rsquo;s a long summer, and AI has been a buzz ever since Chat GPT was introduced to the general public. Since then it&rsquo;s been a roller coaster ride of AI advancements, and the latest one is GPT-4. While there is much heated debate on whether it&rsquo;s out to replace us or turn into a skynet version of virtual overlords, I wanted to see if it&rsquo;s any good at writing tech blogs."><meta property="og:url" content="https://www.mohseen.dev/post/2023-10-06-automate-publishing-blogs-with-gpt-4/"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:image" content><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Automate Publishing Blogs with GPT-4 | Mohseen"><link rel=canonical href=https://www.mohseen.dev/post/2023-10-06-automate-publishing-blogs-with-gpt-4/><meta name=twitter:description content="Summer 2023 It&rsquo;s a long summer, and AI has been a buzz ever since Chat GPT was introduced to the general public. Since then it&rsquo;s been a roller coaster ride of AI advancements, and the latest one is GPT-4. While there is much heated debate on whether it&rsquo;s out to replace us or turn into a skynet version of virtual overlords, I wanted to see if it&rsquo;s any good at writing tech blogs."><meta name=twitter:image content><meta property="article:published_time" content="2023-10-03T00:00:00+00:00"><meta property="article:updated_time" content="2023-10-03T00:00:00+00:00"></head><body class=line-numbers><script src=/js/initColors.js></script><div class=layout-styled><section class=section><div class=nav-container><a class=logo-link href=/><div class=logo><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 767.42 894.15"><path id="first-m" fill="#1ee3cf" d="m301.64 485.72-85.91-166.86v122.29l83.17 167.52c9.36 18.77 36.24 18.64 45.4-.25l9-18.58zm282.07 44.29V798.7a25.27 25.27.0 1050.54.0V425.52zM625.08 9.15a31.28 31.28.0 00-50 8L385.9 393.31l32.2 62.5 155.1-320.6a5.54 5.54.0 0110.53 2.42v128.4l50.54-100.47V31.22a30.86 30.86.0 00-9.19-22.07zM60.33 16.91A31.29 31.29.0 0032.52.0h-1.24A31.26 31.26.0 000 31.22V798.7a25.3 25.3.0 0025.27 25.27h1a25.3 25.3.0 0025.27-25.27V133.97a5.55 5.55.0 0110.53-2.41l40.08 80.77V101.39c0-1 0-2 .06-3z"/><path id="second-m" fill="#d1d3d4" d="M767.42 101.42v767.46a25.27 25.27.0 01-25.27 25.27 25.26 25.26.0 01-25.25-25.27V207.82a5.55 5.55.0 00-10.55-2.41L477.4 678.6c-9.15 18.91-36 19-45.38.23L195.27 201.72a5.55 5.55.0 00-10.52 2.43v664.7a25.27 25.27.0 01-25.27 25.3h-1a25.27 25.27.0 01-25.27-25.27V101.42a31.26 31.26.0 0131.23-31.27h1.24a31.27 31.27.0 0127.8 17l254.77 494.87a6.3 6.3.0 0011.22.0l248.76-494.6a31.26 31.26.0 0127.93-17.27 31.26 31.26.0 0131.26 31.27z"/></svg></div><span class=header-hidden>Navigate back to the homepage</span></a><div class=nav-controls><button id=copyButton class=icon-wrapper><svg class="icon-image" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M2 5C2 3.34328 3.34328 2 5 2h9C15.6567 2 17 3.34328 17 5V9C17 10.6567 15.6567 12 14 12H10C9.44771 12 9 12.4477 9 13S9.44771 14 10 14h4C16.7613 14 19 11.7613 19 9V5C19 2.23872 16.7613.0 14 0H5C2.23872.0.0 2.23872.0 5V9C0 10.4938.656313 11.8361 1.6935 12.7509 2.10768 13.1163 2.73961 13.0767 3.10494 12.6625 3.47028 12.2483 3.43068 11.6164 3.0165 11.2511 2.39169 10.6999 2 9.89621 2 9V5zm5 6c0-1.65672 1.34328-3 3-3h4C14.5523 8 15 7.55228 15 7S14.5523 6 14 6H10C7.23872 6 5 8.23872 5 11v4C5 17.7613 7.23872 20 10 20h9C21.7613 20 24 17.7613 24 15V11C24 9.50621 23.3437 8.16393 22.3065 7.24906 21.8923 6.88372 21.2604 6.92332 20.8951 7.3375 20.5297 7.75168 20.5693 8.38361 20.9835 8.74894 21.6083 9.30007 22 10.1038 22 11v4C22 16.6567 20.6567 18 19 18H10C8.34328 18 7 16.6567 7 15V11z" fill="#000"/></svg><div id=toolTip class=tool-tip>copied</div><input id=copyText style=opacity:0 type=text class=tool-tip></button>
+<html><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=icon href=/images/favicon.svg><link rel=stylesheet href=/scss/global.min.a354930fb2dbf3b2f676a6c7b8384336f924ee47d96ee3f8ce3b3162f116a60f.css><link rel=stylesheet href=/css/prism.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel=stylesheet><link rel=stylesheet href=https://use.typekit.net/yka3uyp.css><title>Automate Publishing Blogs with GPT-4 | Mohseen</title><meta name=description content="Summer 2023
+It&rsquo;s a long summer, and AI has been a buzz ever since Chat GPT was introduced to the general public.
+Since then it&rsquo;s been a roller coaster ride of AI advancements, and the latest one is GPT-4.
+While there is much heated debate on whether it&rsquo;s out to replace us or turn into a skynet version of virtual overlords, I wanted to see if it&rsquo;s any good at writing tech blogs."><meta property="og:title" content="Automate Publishing Blogs with GPT-4 | Mohseen"><meta property="og:site_name" content="Mohseen"><meta property="og:description" content="Summer 2023
+It&rsquo;s a long summer, and AI has been a buzz ever since Chat GPT was introduced to the general public.
+Since then it&rsquo;s been a roller coaster ride of AI advancements, and the latest one is GPT-4.
+While there is much heated debate on whether it&rsquo;s out to replace us or turn into a skynet version of virtual overlords, I wanted to see if it&rsquo;s any good at writing tech blogs."><meta property="og:url" content="https://www.mohseen.dev/post/2023-10-06-automate-publishing-blogs-with-gpt-4/"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:image" content><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Automate Publishing Blogs with GPT-4 | Mohseen"><link rel=canonical href=https://www.mohseen.dev/post/2023-10-06-automate-publishing-blogs-with-gpt-4/><meta name=twitter:description content="Summer 2023
+It&rsquo;s a long summer, and AI has been a buzz ever since Chat GPT was introduced to the general public.
+Since then it&rsquo;s been a roller coaster ride of AI advancements, and the latest one is GPT-4.
+While there is much heated debate on whether it&rsquo;s out to replace us or turn into a skynet version of virtual overlords, I wanted to see if it&rsquo;s any good at writing tech blogs."><meta name=twitter:image content><meta property="article:published_time" content="2023-10-03T00:00:00+00:00"><meta property="article:updated_time" content="2023-10-03T00:00:00+00:00"></head><body class=line-numbers><script src=/js/initColors.js></script><div class=layout-styled><section class=section><div class=nav-container><a class=logo-link href=/><div class=logo><svg viewBox="0 0 767.42 894.15"><path id="first-m" fill="#1ee3cf" d="m301.64 485.72-85.91-166.86v122.29l83.17 167.52c9.36 18.77 36.24 18.64 45.4-.25l9-18.58zm282.07 44.29V798.7a25.27 25.27.0 1050.54.0V425.52zM625.08 9.15a31.28 31.28.0 00-50 8L385.9 393.31l32.2 62.5 155.1-320.6a5.54 5.54.0 0110.53 2.42v128.4l50.54-100.47V31.22a30.86 30.86.0 00-9.19-22.07zM60.33 16.91A31.29 31.29.0 0032.52.0h-1.24A31.26 31.26.0 000 31.22V798.7a25.3 25.3.0 0025.27 25.27h1a25.3 25.3.0 0025.27-25.27V133.97a5.55 5.55.0 0110.53-2.41l40.08 80.77V101.39c0-1 0-2 .06-3z"/><path id="second-m" fill="#d1d3d4" d="M767.42 101.42v767.46a25.27 25.27.0 01-25.27 25.27 25.26 25.26.0 01-25.25-25.27V207.82a5.55 5.55.0 00-10.55-2.41L477.4 678.6c-9.15 18.91-36 19-45.38.23L195.27 201.72a5.55 5.55.0 00-10.52 2.43v664.7a25.27 25.27.0 01-25.27 25.3h-1a25.27 25.27.0 01-25.27-25.27V101.42a31.26 31.26.0 0131.23-31.27h1.24a31.27 31.27.0 0127.8 17l254.77 494.87a6.3 6.3.0 0011.22.0l248.76-494.6a31.26 31.26.0 0127.93-17.27 31.26 31.26.0 0131.26 31.27z"/></svg></div><span class=header-hidden>Navigate back to the homepage</span></a><div class=nav-controls><button id=copyButton class=icon-wrapper>
+<svg class="icon-image" width="24" height="20" viewBox="0 0 24 20" fill="none"><path fillRule="evenodd" clipRule="evenodd" d="M2 5C2 3.34328 3.34328 2 5 2h9c1.6567.0 3 1.34328 3 3V9c0 1.6567-1.3433 3-3 3H10C9.44771 12 9 12.4477 9 13S9.44771 14 10 14h4c2.7613.0 5-2.2387 5-5V5c0-2.76128-2.2387-5-5-5H5C2.23872.0.0 2.23872.0 5V9c0 1.4938.656313 2.8361 1.6935 3.7509C2.10768 13.1163 2.73961 13.0767 3.10494 12.6625 3.47028 12.2483 3.43068 11.6164 3.0165 11.2511 2.39169 10.6999 2 9.89621 2 9V5zm5 6c0-1.65672 1.34328-3 3-3h4C14.5523 8 15 7.55228 15 7S14.5523 6 14 6H10C7.23872 6 5 8.23872 5 11v4c0 2.7613 2.23872 5 5 5h9c2.7613.0 5-2.2387 5-5V11C24 9.50621 23.3437 8.16393 22.3065 7.24906 21.8923 6.88372 21.2604 6.92332 20.8951 7.3375 20.5297 7.75168 20.5693 8.38361 20.9835 8.74894 21.6083 9.30007 22 10.1038 22 11v4c0 1.6567-1.3433 3-3 3H10c-1.65672.0-3-1.3433-3-3V11z" fill="#000"/></svg><div id=toolTip class=tool-tip>copied</div><input id=copyText style=opacity:0 type=text class=tool-tip>
+</button>
 <button id=themeColorButton class=icon-wrapper><div id=sunRays class=sun-rays></div><div id=moonOrSun class=moon-or-sun></div><div id=moonMask class=moon-mask></div></button></div></div></section><script src=/js/toggleLogos.js></script><script src=/js/toggleColors.js></script><script src=/js/copyUrl.js></script><section class="section narrow"><section id=articleHero class="section narrow"><div class=article-hero><header class=article-header><h1 class=article-hero-heading>Automate Publishing Blogs with GPT-4</h1><div class=article-hero-subtitle><div class=article-meta><a href=/authors/mohseen-mukaddam/ class=article-author-link><div class=article-author-avatar><img src=/images/mohseen-mukaddam.jpg></div><strong>Mohseen Mukaddam</strong>
-<span class=hide-on-mobile>,&nbsp;</span></a>
-<script src=/js/collapseAuthors.js></script>October 3, 2023
-• 13 min read</div></div></header><div class=article-hero-image id=ArticleImage__Hero><picture>
-<source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.desktop.jpg media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.desktop.jpg media="(min-width: 1280px)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.tablet.jpg media="(min-width: 735px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 735px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.tablet.jpg media="(min-width: 735px)"><source srcset=818x434.jpg media="(min-width: 540px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 540px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.tablet.jpg media="(min-width: 540px)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 320px)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 0px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 0px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 0px)"><img src=/images/hero/automate-publishing-blogs-with-gpt-4.fallback.jpg alt></picture></div></div></section><aside id=progressBar class=aside-container><div class=aside-align><div><div class=overlap-container></div></div></div><div class=progress-container tabindex={-1}><div class=track-line aria-hidden=true><div id=progressIndicator class=progress-line></div></div></div></aside><article id=articleContent class=post-content style=position:relative><h1 id=summer-2023>Summer 2023</h1><p>It&rsquo;s a long summer, and AI has been a buzz ever since <a href=https://chat.openai.com/>Chat GPT</a> was introduced to the general public.
+<span class=hide-on-mobile>,&nbsp;</span>
+</a><script src=/js/collapseAuthors.js></script>October 3, 2023
+• 13 min read</div></div></header><div class=article-hero-image id=ArticleImage__Hero><picture><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.desktop.jpg media="(min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.desktop.jpg media="(min-width: 1280px)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.tablet.jpg media="(min-width: 735px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 735px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.tablet.jpg media="(min-width: 735px)"><source srcset=818x434.jpg media="(min-width: 540px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 540px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.tablet.jpg media="(min-width: 540px)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 320px)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 0px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 0px) and (min-resolution: 192dpi)"><source srcset=/images/hero/automate-publishing-blogs-with-gpt-4.mobile.jpg media="(min-width: 0px)"><img src=/images/hero/automate-publishing-blogs-with-gpt-4.fallback.jpg alt></picture></div></div></section><aside id=progressBar class=aside-container><div class=aside-align><div><div class=overlap-container></div></div></div><div class=progress-container tabindex={-1}><div class=track-line aria-hidden=true><div id=progressIndicator class=progress-line></div></div></div></aside><article id=articleContent class=post-content style=position:relative><h1 id=summer-2023>Summer 2023</h1><p>It&rsquo;s a long summer, and AI has been a buzz ever since <a href=https://chat.openai.com/>Chat GPT</a> was introduced to the general public.
 Since then it&rsquo;s been a roller coaster ride of AI advancements, and the latest one is <a href=https://openai.com/blog/gpt-4/>GPT-4</a>.
 While there is much heated debate on whether it&rsquo;s out to replace us or turn into a skynet version of virtual overlords, I wanted to see if it&rsquo;s any good at writing tech blogs.</p><p>I tend to post when excitement or curiosity strikes, and I&rsquo;m not the most consistent blogger. So I figured if GPT can give me reasonable enough content with a guiding but <em><strong>firm</strong></em> hand, I can get back to writing more often.</p><h2 id=the-experiment>The Experiment</h2><p>Given a set of topics/themes is GPT able to write a blog post that is coherent and relevant? Can it make jokes? or does it write everything in a robotic tone?
 Can it link images to the post, better yet even reference them.</p><p>I had high hopes for GPT-4, so I fired up Chat GPT&rsquo;s chat window and asked away.
 It started out writing jokes a 5 year old would be proud of, but I persisted and it started to get better™.</p><div class=Image__Medium><img src=/images/gpt-1.png alt="Chat GPT conversation"></div><p>I asked it to write in different styles for different topics, and it was able to do so with varying degrees of success.
 The most clunky part was the image linking, it would link to images that did not exists, ever, yet it believed them to be true with all its heart.</p><p>After fine tuning my prompts and refining some of the asks that I made to GPT-3.5, it eventually looked like something I would be okay with posting (sometimes).</p><p>Next, I had to see if it would write a blog post in markdown the way my flavor of Hugo likes it.
 This was a bit tricky but after reading through a dozen or so responses, I figured some scripting magic might help my cause.</p><h2 id=building-the-pipeline>Building the Pipeline</h2><p>For building this automated <em><strong>CRON</strong></em> job, I needed a few things:</p><ul><li>A way to trigger the job</li><li>Fetch content from GPT-4</li><li>Validate and fetch images (since GPT-3.5/4 really wasn&rsquo;t good at this)</li><li>Build the website</li><li>Transport it to the webs</li></ul><p>CRON does meet these requirements but would require a lot of heavy lifting on my end. My goal was to be as lazy as possible, so I opted for <a href=https://airflow.apache.org/>Apache Airflow</a>.
-A dockerized version of Airflow with all Pythonic and Bashy goodness was all I needed to get started.</p><blockquote><p>Repo for this project is available <a href=https://github.com/mohseenrm/gpt-publisher>here</a></p></blockquote><p>Airflow lets you define DAGs (Directed Acyclic Graphs) which are essentially a set of tasks that are executed in a specific order. It also allows fine grained control on how/what triggers them, how to handle outputs from different operators, build in retries, catchup and a lot more.</p><p>After installing dependencies, I needed to get it Dockerized and running on my local machine. I used the <a href=https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml>official docker-compose</a> file to get started.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>version</span>: <span style=color:#e6db74>&#39;3.8&#39;</span>
-<span style=color:#f92672>x-airflow-common</span>:
-  <span style=color:#75715e>&amp;airflow-common</span>
-  <span style=color:#75715e># In order to add custom dependencies or upgrade provider packages you can use your extended image.</span>
-  <span style=color:#75715e># Comment the image line, place your Dockerfile in the directory where you placed the docker-compose.yaml</span>
-  <span style=color:#75715e># and uncomment the &#34;build&#34; line below, Then run `docker-compose build` to build the images.</span>
-  <span style=color:#75715e>#  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.1}</span>
-  <span style=color:#f92672>build</span>: <span style=color:#ae81ff>.</span>
-  <span style=color:#f92672>environment</span>:
-    <span style=color:#75715e>&amp;airflow-common-env</span>
-    <span style=color:#f92672>AIRFLOW__CORE__EXECUTOR</span>: <span style=color:#ae81ff>CeleryExecutor</span>
-    <span style=color:#f92672>AIRFLOW__DATABASE__SQL_ALCHEMY_CONN</span>: <span style=color:#ae81ff>postgresql+psycopg2://airflow:airflow@postgres/airflow</span>
-    <span style=color:#75715e># For backward compatibility, with Airflow &lt;2.3</span>
-    <span style=color:#f92672>AIRFLOW__CORE__SQL_ALCHEMY_CONN</span>: <span style=color:#ae81ff>postgresql+psycopg2://airflow:airflow@postgres/airflow</span>
-    <span style=color:#f92672>AIRFLOW__CELERY__RESULT_BACKEND</span>: <span style=color:#ae81ff>db+postgresql://airflow:airflow@postgres/airflow</span>
-    <span style=color:#f92672>AIRFLOW__CELERY__BROKER_URL</span>: <span style=color:#ae81ff>redis://:@redis:6379/0</span>
-    <span style=color:#f92672>AIRFLOW__CORE__FERNET_KEY</span>: <span style=color:#e6db74>&#39;&#39;</span>
-    <span style=color:#f92672>AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION</span>: <span style=color:#e6db74>&#39;true&#39;</span>
-    <span style=color:#f92672>AIRFLOW__CORE__LOAD_EXAMPLES</span>: <span style=color:#e6db74>&#39;true&#39;</span>
-    <span style=color:#f92672>AIRFLOW__API__AUTH_BACKENDS</span>: <span style=color:#e6db74>&#39;airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session&#39;</span>
-    <span style=color:#75715e># yamllint disable rule:line-length</span>
-    <span style=color:#75715e># Use simple http server on scheduler for health checks</span>
-    <span style=color:#75715e># See https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/check-health.html#scheduler-health-check-server</span>
-    <span style=color:#75715e># yamllint enable rule:line-length</span>
-    <span style=color:#f92672>AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK</span>: <span style=color:#e6db74>&#39;true&#39;</span>
-    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_TOKEN</span>: <span style=color:#ae81ff>${GITHUB_TOKEN:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_USER</span>: <span style=color:#ae81ff>${GITHUB_USER:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_REPOSITORY:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_OPENAI_API_KEY</span>: <span style=color:#ae81ff>${OPENAI_API_KEY:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_WEBSITE_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_WEBSITE_REPOSITORY:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_UNSPLASH_TOKEN</span>: <span style=color:#ae81ff>${UNSPLASH_TOKEN:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_SENDGRID_API_KEY</span>: <span style=color:#ae81ff>${SENDGRID_API_KEY:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_SENDGRID_SUCCESS_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_SUCCESS_TEMPLATE:-}</span>
-    <span style=color:#f92672>AIRFLOW_VAR_SENDGRID_FAILURE_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_FAILURE_TEMPLATE:-}</span>
-    <span style=color:#f92672>AIRFLOW__CORE__HIDE_SENSITIVE_VAR_CONN_FIELDS</span>: <span style=color:#ae81ff>${AIRFLOW__CORE__HIDE_SENSITIVE_VAR_CONN_FIELDS:-&#39;true&#39;}</span>
-    <span style=color:#75715e># WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks</span>
-    <span style=color:#75715e># for other purpose (development, test and especially production usage) build/extend Airflow image.</span>
-    <span style=color:#f92672>_PIP_ADDITIONAL_REQUIREMENTS</span>: <span style=color:#ae81ff>${_PIP_ADDITIONAL_REQUIREMENTS:-}</span>
-  <span style=color:#f92672>volumes</span>:
-    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags</span>
-    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs</span>
-    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config</span>
-    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins</span>
-    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/constants:/opt/airflow/gpt_publisher/constants</span>
-  <span style=color:#f92672>user</span>: <span style=color:#e6db74>&#34;${AIRFLOW_UID:-50000}:0&#34;</span>
-  <span style=color:#f92672>depends_on</span>:
-    <span style=color:#75715e>&amp;airflow-common-depends-on</span>
-    <span style=color:#f92672>redis</span>:
-      <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_healthy</span>
-    <span style=color:#f92672>postgres</span>:
-      <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_healthy</span>
-</code></pre></div><p>By default Airflow uses a SQLite database, but I wanted to use a more standardized way for running and scheduling tasks. So I opted for Postgres and Redis as the backend and message broker. It truly is wild how many different ways you can set Airflow up. Docker does solve a key problem <span class=highlight-block>Portability</span> and <span class=highlight-block>Dependency Management</span>.</p><p>Once I had Redis and Postgres services defined, all I needed to do was add my flavor of dependencies for fetching, processing and uploading these files to my blog.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>services</span>:
-  <span style=color:#f92672>postgres</span>:
-    <span style=color:#f92672>image</span>: <span style=color:#ae81ff>postgres:13</span>
-    <span style=color:#f92672>environment</span>:
-      <span style=color:#f92672>POSTGRES_USER</span>: <span style=color:#ae81ff>airflow</span>
-      <span style=color:#f92672>POSTGRES_PASSWORD</span>: <span style=color:#ae81ff>airflow</span>
-      <span style=color:#f92672>POSTGRES_DB</span>: <span style=color:#ae81ff>airflow</span>
-    <span style=color:#f92672>volumes</span>:
-      - <span style=color:#ae81ff>postgres-db-volume:/var/lib/postgresql/data</span>
-    <span style=color:#f92672>healthcheck</span>:
-      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;pg_isready&#34;</span>, <span style=color:#e6db74>&#34;-U&#34;</span>, <span style=color:#e6db74>&#34;airflow&#34;</span>]
-      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>10s</span>
-      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>5</span>
-      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>5s</span>
-    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
-
-  <span style=color:#f92672>redis</span>:
-    <span style=color:#f92672>image</span>: <span style=color:#ae81ff>redis:latest</span>
-    <span style=color:#f92672>expose</span>:
-      - <span style=color:#ae81ff>6379</span>
-    <span style=color:#f92672>healthcheck</span>:
-      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;redis-cli&#34;</span>, <span style=color:#e6db74>&#34;ping&#34;</span>]
-      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>10s</span>
-      <span style=color:#f92672>timeout</span>: <span style=color:#ae81ff>30s</span>
-      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>50</span>
-      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>30s</span>
-    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
-
-  <span style=color:#f92672>airflow-webserver</span>:
-    <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common</span>
-    <span style=color:#f92672>command</span>: <span style=color:#ae81ff>webserver</span>
-    <span style=color:#f92672>ports</span>:
-      - <span style=color:#e6db74>&#34;8080:8080&#34;</span>
-    <span style=color:#f92672>healthcheck</span>:
-      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;curl&#34;</span>, <span style=color:#e6db74>&#34;--fail&#34;</span>, <span style=color:#e6db74>&#34;http://localhost:8080/health&#34;</span>]
-      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>30s</span>
-      <span style=color:#f92672>timeout</span>: <span style=color:#ae81ff>10s</span>
-      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>5</span>
-      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>30s</span>
-    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
-    <span style=color:#f92672>depends_on</span>:
-      <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common-depends-on</span>
-      <span style=color:#f92672>airflow-init</span>:
-        <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_completed_successfully</span>
-
-  <span style=color:#f92672>airflow-scheduler</span>:
-    <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common</span>
-    <span style=color:#f92672>command</span>: <span style=color:#ae81ff>scheduler</span>
-    <span style=color:#f92672>healthcheck</span>:
-      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;curl&#34;</span>, <span style=color:#e6db74>&#34;--fail&#34;</span>, <span style=color:#e6db74>&#34;http://localhost:8974/health&#34;</span>]
-      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>30s</span>
-      <span style=color:#f92672>timeout</span>: <span style=color:#ae81ff>10s</span>
-      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>5</span>
-      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>30s</span>
-    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
-    <span style=color:#f92672>depends_on</span>:
-      <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common-depends-on</span>
-      <span style=color:#f92672>airflow-init</span>:
-        <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_completed_successfully</span>
-</code></pre></div><h2 id=creating-the-dag>Creating the DAG</h2><p>Once I had the dependencies sorted, I needed to create a DAG that would do a few key things:</p><ol><li>Pick a random theme for blog post</li><li>Fetch content from GPT-4</li><li>Validate and fetch images from Unsplash</li><li>Process images and remove any unnecessary content</li><li>Build the website</li><li>Upload the website to Github</li><li>Send a notification email on success or failure</li><li>Run this every Friday at 10:00 AM</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>with</span> DAG(
-    dag_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;publish_blog_post&#34;</span>,
-    <span style=color:#75715e># Once every week on Friday at 10:00 AM UTC</span>
-    schedule<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;0 10 * * 5&#34;</span>,
-    start_date<span style=color:#f92672>=</span>pendulum<span style=color:#f92672>.</span>datetime(<span style=color:#ae81ff>2021</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, tz<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;UTC&#34;</span>),
-    catchup<span style=color:#f92672>=</span>False,
-    dagrun_timeout<span style=color:#f92672>=</span>datetime<span style=color:#f92672>.</span>timedelta(minutes<span style=color:#f92672>=</span><span style=color:#ae81ff>60</span>),
-    tags<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#34;gpt-publisher&#34;</span>],
-    render_template_as_native_obj<span style=color:#f92672>=</span>True,
-) <span style=color:#66d9ef>as</span> dag:
-</code></pre></div><p>Once you have a dag defined, the scheduler will pick it up and start running it at the specified time. You can also trigger it manually from the UI.</p><p>Next, how to inject secrets and tokens to Airflow container. Airflow provide a lot of way to configure this, but the one I found best suited for this was <a href=https://airflow.apache.org/docs/apache-airflow/stable/howto/variable.html>Variables</a>.</p><p>You can inject any environment variable from your Docker container into an Airflow variable by prefixing it with <code>AIRFLOW_VAR*</code>. This does store it in the metadata database, so might come with some perf hit when reading, but it was good enough for my use case.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>AIRFLOW_VAR_GITHUB_TOKEN</span>: <span style=color:#ae81ff>${GITHUB_TOKEN:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_GITHUB_USER</span>: <span style=color:#ae81ff>${GITHUB_USER:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_GITHUB_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_REPOSITORY:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_OPENAI_API_KEY</span>: <span style=color:#ae81ff>${OPENAI_API_KEY:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_GITHUB_WEBSITE_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_WEBSITE_REPOSITORY:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_UNSPLASH_TOKEN</span>: <span style=color:#ae81ff>${UNSPLASH_TOKEN:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_SENDGRID_API_KEY</span>: <span style=color:#ae81ff>${SENDGRID_API_KEY:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_SENDGRID_SUCCESS_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_SUCCESS_TEMPLATE:-}</span>
-<span style=color:#f92672>AIRFLOW_VAR_SENDGRID_FAILURE_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_FAILURE_TEMPLATE:-}</span>
-</code></pre></div><p>Docker compose picks up any local <code>.env</code> you may have, and inject it for you.</p><p>Finally, let&rsquo;s define the <code>Dockerfile</code> that has extra dependencies we might need to successfully pull this off.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dockerfile data-lang=dockerfile><span style=color:#66d9ef>FROM</span><span style=color:#e6db74> apache/airflow:2.7.1</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>USER</span><span style=color:#e6db74> root</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> apt-get update <span style=color:#f92672>&amp;&amp;</span> apt-get install -y <span style=color:#ae81ff>\
-</span><span style=color:#ae81ff></span>    git<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>LABEL</span> authors<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;momo&#34;</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /tmp</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> curl -L https://go.dev/dl/go1.21.1.linux-amd64.tar.gz &gt; go1.21.1.linux-amd64.tar.gz<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> rm -rf /usr/local/go <span style=color:#f92672>&amp;&amp;</span> tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>ENV</span> PATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/usr/local/go/bin:</span><span style=color:#e6db74>${</span>PATH<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>ENV</span> GOPATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/usr/local/go&#34;</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> go version<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> rm -rf /tmp/go1.21.1.linux-amd64.tar.gz<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> apt-get install hugo -y<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> hugo version<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#75715e># Install package dependencies</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>USER</span><span style=color:#e6db74> airflow</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /opt/airflow</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> requirements.txt requirements.txt<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> setup.py setup.py<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> pip install --upgrade pip<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> mkdir -p gpt_publisher<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /opt/airflow/gpt_publisher</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> gpt_publisher/__init__.py __init__.py<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /opt/airflow</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> echo <span style=color:#e6db74>&#34;Installing base package&#34;</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> pip install -e .<span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> echo <span style=color:#e6db74>&#34;Installing requirements&#34;</span><span style=color:#960050;background-color:#1e0010>
-</span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> pip install -r requirements.txt<span style=color:#960050;background-color:#1e0010>
-</span></code></pre></div><h2 id=graphing-the-tasks>Graphing the tasks</h2><p>Once Airflow is good to go, we now start with defining the tasks that need to be executed in a specific order. Airflow provides a lot of operators out of the box, but you can also create your own custom operators.</p><p>First task involves picking a random topic from a predefined list</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pick_topic&#34;</span>)
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>pick_topic</span>():
-        length <span style=color:#f92672>=</span> len(GPT_TOPICS)
-        index <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, length <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
-        <span style=color:#66d9ef>return</span> GPT_TOPICS[index]
-</code></pre></div><p>Pretty straightforward, next we need to send the topic of choice to GPT-4</p><h3 id=fetching-content-from-gpt-4>Fetching Content from GPT-4</h3><p>I used the <a href=https://github.com/openai/openai-python>OpenAI Python Client</a> client to get chat completions based on my prompts.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;call_gpt&#34;</span>)
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>call_gpt</span>(ti<span style=color:#f92672>=</span>None):
-        <span style=color:#e6db74>&#34;&#34;&#34;
-</span><span style=color:#e6db74>        Calls ChatGPT 4 to generate a blog post
-</span><span style=color:#e6db74>        &#34;&#34;&#34;</span>
-        theme <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pick_topic&#34;</span>)
-        <span style=color:#66d9ef>assert</span> theme <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> None <span style=color:#f92672>or</span> theme <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
-
-        prompt <span style=color:#f92672>=</span> gpt_prompt(theme)
-        openai_api_key <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;OPENAI_API_KEY&#34;</span>)
-        <span style=color:#66d9ef>assert</span> openai_api_key <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> None <span style=color:#f92672>or</span> openai_api_key <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
-
-        openai<span style=color:#f92672>.</span>api_key <span style=color:#f92672>=</span> openai_api_key
-        response <span style=color:#f92672>=</span> openai<span style=color:#f92672>.</span>ChatCompletion<span style=color:#f92672>.</span>create(
-            model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-4&#34;</span>, messages<span style=color:#f92672>=</span>[{<span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>, <span style=color:#e6db74>&#34;content&#34;</span>: prompt}]
-        )
-
-        raw_text <span style=color:#f92672>=</span> response[<span style=color:#e6db74>&#34;choices&#34;</span>][<span style=color:#ae81ff>0</span>][<span style=color:#e6db74>&#34;message&#34;</span>][<span style=color:#e6db74>&#34;content&#34;</span>]
-        <span style=color:#66d9ef>assert</span> raw_text <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> None <span style=color:#f92672>or</span> raw_text <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
-        <span style=color:#66d9ef>return</span> raw_text
-</code></pre></div><p>One fascinating wrinkle with Airflow tasks is they need to communicate the results of runs with each other. Airflow solves this with <span class=highlight-block>XCom</span>.
-XCom allows dependent tasks to pull relevant information from the previous task and use it in their own execution. It&rsquo;s sort of like passing around a context in a request flow</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>theme <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pick_topic&#34;</span>)
-</code></pre></div><p>Once available we can use it and send the GPT-4 response for further processing.</p><h3 id=processing-blog-post-response>Processing Blog post response</h3><p>This is where things get a bit tricky, GPT-4 is not perfect and it does make mistakes. So we need to validate the response and make sure it&rsquo;s good enough to be posted.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;process_blog_post&#34;</span>)
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>process_blog_post</span>(ti<span style=color:#f92672>=</span>None):
-        <span style=color:#e6db74>&#34;&#34;&#34;
-</span><span style=color:#e6db74>        Processes the blog post, sanitizes date and tags
-</span><span style=color:#e6db74>        &#34;&#34;&#34;</span>
-        post <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;call_gpt&#34;</span>)
-        <span style=color:#66d9ef>assert</span> post <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> None <span style=color:#f92672>or</span> post <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
-
-        date <span style=color:#f92672>=</span> datetime<span style=color:#f92672>.</span>datetime<span style=color:#f92672>.</span>now()<span style=color:#f92672>.</span>isoformat()<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#34;T&#34;</span>)[<span style=color:#ae81ff>0</span>]
-        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(DATE_TIME_REGEX, f<span style=color:#e6db74>&#34;date: {date}&#34;</span>, post)
-
-        tags <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>findall(TAGS_REGEX, post)
-        tags <span style=color:#f92672>=</span> tags[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#34;,&#34;</span>)
-        tags <span style=color:#f92672>=</span> [tag<span style=color:#f92672>.</span>strip() <span style=color:#66d9ef>for</span> tag <span style=color:#f92672>in</span> tags]
-        tags <span style=color:#f92672>=</span> [
-            tag<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;_&#34;</span>, <span style=color:#e6db74>&#34; &#34;</span>)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;-&#34;</span>, <span style=color:#e6db74>&#34; &#34;</span>)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#39;&#34;&#39;</span>, <span style=color:#e6db74>&#34;&#34;</span>)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;&#39;&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>)
-            <span style=color:#66d9ef>for</span> tag <span style=color:#f92672>in</span> tags
-        ]
-
-        raw_title <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>findall(TITLE_REGEX, post)
-        <span style=color:#66d9ef>assert</span> raw_title <span style=color:#f92672>and</span> len(raw_title) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
-
-        raw_title <span style=color:#f92672>=</span> raw_title[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>strip()
-        title_words <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>findall(WORD_REGEX, raw_title)
-
-        <span style=color:#66d9ef>assert</span> title_words <span style=color:#f92672>and</span> len(title_words) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
-        title_words <span style=color:#f92672>=</span> [word<span style=color:#f92672>.</span>lower() <span style=color:#66d9ef>for</span> word <span style=color:#f92672>in</span> title_words]
-        title_words <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;-&#34;</span><span style=color:#f92672>.</span>join(title_words)
-        file_name <span style=color:#f92672>=</span> f<span style=color:#e6db74>&#34;{date}-{title_words}.md&#34;</span>
-
-        <span style=color:#66d9ef>return</span> {
-            <span style=color:#e6db74>&#34;post&#34;</span>: post,
-            <span style=color:#e6db74>&#34;tags&#34;</span>: tags,
-            <span style=color:#e6db74>&#34;date&#34;</span>: date,
-            <span style=color:#e6db74>&#34;file_name&#34;</span>: file_name,
-            <span style=color:#e6db74>&#34;title&#34;</span>: title_words,
-        }
-</code></pre></div><h3 id=fetching-images-from-unsplash>Fetching Images from Unsplash</h3><p>After we sanitize the post, we can fetch relevant images from <a href=https://unsplash.com/>Unsplash</a> and add them to the post.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fetch_images&#34;</span>)
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>fetch_images</span>(ti<span style=color:#f92672>=</span>None):
-        context <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;process_blog_post&#34;</span>)
-        tags <span style=color:#f92672>=</span> context[<span style=color:#e6db74>&#34;tags&#34;</span>][:<span style=color:#ae81ff>2</span>]
-        query <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;, &#34;</span><span style=color:#f92672>.</span>join(tags)
-
-        token <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;UNSPLASH_TOKEN&#34;</span>)
-        <span style=color:#66d9ef>assert</span> token <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> None <span style=color:#f92672>or</span> token <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
-
-        headers <span style=color:#f92672>=</span> {
-            <span style=color:#e6db74>&#34;Authorization&#34;</span>: f<span style=color:#e6db74>&#34;Client-ID {token}&#34;</span>,
-        }
-        url <span style=color:#f92672>=</span> f<span style=color:#e6db74>&#34;{UNSPLASH_BASE_URL}/search/photos&#34;</span>
-        params <span style=color:#f92672>=</span> {
-            <span style=color:#e6db74>&#34;query&#34;</span>: query,
-        }
-        response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>get(url, headers<span style=color:#f92672>=</span>headers, params<span style=color:#f92672>=</span>params)
-
-        json <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>json()
-        results <span style=color:#f92672>=</span> json[<span style=color:#e6db74>&#34;results&#34;</span>]
-
-        <span style=color:#66d9ef>assert</span> results <span style=color:#f92672>and</span> len(results) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
-
-        idx <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, len(results) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
-        image_urls <span style=color:#f92672>=</span> results[idx][<span style=color:#e6db74>&#34;urls&#34;</span>]
-
-        preview <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;small&#34;</span>]
-        desktop <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;full&#34;</span>]
-        tablet <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;regular&#34;</span>]
-        mobile <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;small&#34;</span>]
-        fallback <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;thumb&#34;</span>]
-
-        <span style=color:#66d9ef>return</span> {
-            <span style=color:#f92672>**</span>context,
-            <span style=color:#e6db74>&#34;preview&#34;</span>: preview,
-            <span style=color:#e6db74>&#34;desktop&#34;</span>: desktop,
-            <span style=color:#e6db74>&#34;tablet&#34;</span>: tablet,
-            <span style=color:#e6db74>&#34;mobile&#34;</span>: mobile,
-            <span style=color:#e6db74>&#34;fallback&#34;</span>: fallback,
-        }
-</code></pre></div><p>Next up, is preparing the images for downloading them into the blog post.</p><h3 id=processing-images>Processing Images</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;process_images&#34;</span>)
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>process_images</span>(ti<span style=color:#f92672>=</span>None):
-        context <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fetch_images&#34;</span>)
-
-        post <span style=color:#f92672>=</span> context[<span style=color:#e6db74>&#34;post&#34;</span>]
-        title <span style=color:#f92672>=</span> context[<span style=color:#e6db74>&#34;title&#34;</span>]
-
-        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(PREVIEW_REGEX, f<span style=color:#e6db74>&#34; /images/hero/{title}.preview.jpg&#34;</span>, post)
-        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(DESKTOP_REGEX, f<span style=color:#e6db74>&#34; /images/hero/{title}.desktop.jpg&#34;</span>, post)
-        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(TABLET_REGEX, f<span style=color:#e6db74>&#34; /images/hero/{title}.tablet.jpg&#34;</span>, post)
-        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(MOBILE_REGEX, f<span style=color:#e6db74>&#34; /images/hero/{title}.mobile.jpg&#34;</span>, post)
-        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(FALLBACK_REGEX, f<span style=color:#e6db74>&#34; /images/hero/{title}.fallback.jpg&#34;</span>, post)
-
-        <span style=color:#75715e># Weird hack for jinja2 template rendering, that strips out newlines</span>
-        post <span style=color:#f92672>=</span> post<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, <span style=color:#e6db74>&#34;&lt;NEW_LINE_TOKEN&gt;&#34;</span>)
-
-        <span style=color:#66d9ef>return</span> {
-            <span style=color:#f92672>**</span>context,
-            <span style=color:#e6db74>&#34;post&#34;</span>: post,
-        }
-</code></pre></div><p>Given our template that&rsquo;s predominantly used in Hugo, we swap in the correct values at run time and make sure the images are available for Hugo to pick up.</p><h3 id=piecing-it-all-together>Piecing it all together</h3><p>Lastly, we need to gather all relevant tags, post, images and build the website.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>run <span style=color:#f92672>=</span> BashOperator(
-        task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;publish_blog_post&#34;</span>,
-        bash_command<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/opt/airflow/dags/scripts/publish.sh &#34;</span>,
-        env<span style=color:#f92672>=</span>{
-            <span style=color:#e6db74>&#34;GITHUB_WEBSITE_REPOSITORY&#34;</span>: Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;GITHUB_WEBSITE_REPOSITORY&#34;</span>),
-            <span style=color:#e6db74>&#34;GITHUB_REPOSITORY&#34;</span>: Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;GITHUB_REPOSITORY&#34;</span>),
-            <span style=color:#e6db74>&#34;CLONE_URL&#34;</span>: clone_url,
-            <span style=color:#e6db74>&#34;CLONE_WEBSITE_REPO_URL&#34;</span>: website_repo_url,
-            <span style=color:#e6db74>&#34;BLOG_FILENAME&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;file_name&#39;] }}&#34;</span>,
-            <span style=color:#e6db74>&#34;BLOG_CONTENT&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;post&#39;] }}&#34;</span>,
-            <span style=color:#e6db74>&#34;PREVIEW_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;preview&#39;] }}&#34;</span>,
-            <span style=color:#e6db74>&#34;DESKTOP_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;desktop&#39;] }}&#34;</span>,
-            <span style=color:#e6db74>&#34;TABLET_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;tablet&#39;] }}&#34;</span>,
-            <span style=color:#e6db74>&#34;MOBILE_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;mobile&#39;] }}&#34;</span>,
-            <span style=color:#e6db74>&#34;FALLBACK_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;fallback&#39;] }}&#34;</span>,
-            <span style=color:#e6db74>&#34;BLOG_TITLE&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;title&#39;] }}&#34;</span>,
-        },
-        do_xcom_push<span style=color:#f92672>=</span>True,
-    )
-</code></pre></div><p>I chose the <a href=https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/bash.html>BashOperator</a> because it uses dependencies from the host OS (in our case, the Docker container) to weave together all the pieces from previous runs.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Reaffirm GO path</span>
-export PATH<span style=color:#f92672>=</span>/usr/local/go/bin:$PATH
-
-echo <span style=color:#e6db74>&#34;Cloning </span><span style=color:#e6db74>${</span>GITHUB_REPOSITORY<span style=color:#e6db74>}</span><span style=color:#e6db74> repo...&#34;</span>
-
-<span style=color:#75715e># Weird hack for jinja2 template rendering, that strips out newlines</span>
-PARSED_BLOG_CONTENT<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>BLOG_CONTENT//&lt;NEW_LINE_TOKEN&gt;/<span style=color:#ae81ff>\\</span>n<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-
-mkdir -p /tmp/gh
-cd /tmp/gh <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-rm -rf website-v7
-git clone <span style=color:#e6db74>&#34;</span>$CLONE_URL<span style=color:#e6db74>&#34;</span>
-cd website-v7 <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-git checkout master
-cd content/post <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-
-echo <span style=color:#e6db74>&#34;Writing to file...&#34;</span>
-
-touch <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
-echo <span style=color:#e6db74>&#34;</span>$PARSED_BLOG_CONTENT<span style=color:#e6db74>&#34;</span> &gt; <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
-
-<span style=color:#75715e># Replace \n with actual newlines</span>
-awk <span style=color:#e6db74>&#39;{gsub(/\\n/,&#34;\n&#34;)}1&#39;</span> <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span> &gt; <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>.tmp&#34;</span> <span style=color:#f92672>&amp;&amp;</span> mv <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>.tmp&#34;</span> <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
-rm <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>.tmp&#34;</span>
-ls -lart
-cat <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
-</code></pre></div><p>This script is responsible for cloning the website repo, writing the blog post to the correct directory. Once the blog post is setup, we need to download images for different screen sizes into the correct directory.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>echo <span style=color:#e6db74>&#34;Downloading images...&#34;</span>
-IMAGE_DIR<span style=color:#f92672>=</span>/tmp/gh/website-v7/static/images/hero
-declare -a IMAGE_URLS<span style=color:#f92672>=(</span><span style=color:#e6db74>&#34;</span>$PREVIEW_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$DESKTOP_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$TABLET_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$MOBILE_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$FALLBACK_URL<span style=color:#e6db74>&#34;</span><span style=color:#f92672>)</span>
-declare -a IMAGE_LOCATIONS<span style=color:#f92672>=(</span><span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.preview.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.desktop.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.tablet.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.mobile.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.fallback.jpg<span style=color:#f92672>)</span>
-IMAGE_SIZE<span style=color:#f92672>=</span><span style=color:#ae81ff>5</span>
-
-<span style=color:#66d9ef>for</span> <span style=color:#f92672>((</span> i<span style=color:#f92672>=</span>0; i&lt;IMAGE_SIZE; i++ <span style=color:#f92672>))</span>;
-<span style=color:#66d9ef>do</span>
-  echo <span style=color:#e6db74>&#34;Downloading: </span><span style=color:#e6db74>${</span>IMAGE_URLS[$i]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-  curl -o <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>IMAGE_LOCATIONS[$i]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>IMAGE_URLS[$i]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-<span style=color:#66d9ef>done</span>
-</code></pre></div><p>After the images are ready, it&rsquo;s time to push to Github.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>echo <span style=color:#e6db74>&#34;Committing changes...&#34;</span>
-
-git config user.email <span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>
-git config user.name <span style=color:#e6db74>&#34;mohseenrm&#34;</span>
-
-cd /tmp/gh/website-v7 <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-
-git add .
-git commit -m <span style=color:#e6db74>&#34;Adding new blog post&#34;</span>
-git push origin master
-
-echo <span style=color:#e6db74>&#34;Done! </span>$BLOG_FILENAME<span style=color:#e6db74> published to master.&#34;</span>
-</code></pre></div><p>I have Hugo setup in a different repository that&rsquo;s hosted on Github, so I would need to build the blog then transfer over the files to the new repo, to begin deploying it to the webs.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd /tmp/gh <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-
-echo <span style=color:#e6db74>&#34;Cloning </span><span style=color:#e6db74>${</span>GITHUB_WEBSITE_REPOSITORY<span style=color:#e6db74>}</span><span style=color:#e6db74> repo...&#34;</span>
-
-rm -rf mohseenrm.github.io
-git clone <span style=color:#e6db74>&#34;</span>$CLONE_WEBSITE_REPO_URL<span style=color:#e6db74>&#34;</span>
-
-echo <span style=color:#e6db74>&#34;Cleaning up old assets...&#34;</span>
-cd mohseenrm.github.io <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-rm -rf about css authors fonts page js images scss post
-rm index.xml index.html sitemap.xml
-
-echo <span style=color:#e6db74>&#34;Building website...&#34;</span>
-cd /tmp/gh/website-v7 <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-hugo --gc --minify --destination /tmp/gh/mohseenrm.github.io
-
-echo <span style=color:#e6db74>&#34;Copying assets...&#34;</span>
-cp -r /tmp/gh/mohseenrm.github.io/public/* /tmp/gh/mohseenrm.github.io
-rm -rf /tmp/gh/mohseenrm.github.io/public
-
-echo <span style=color:#e6db74>&#34;Committing changes...&#34;</span>
-cd /tmp/gh/mohseenrm.github.io <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
-git add .
-
-git config user.email <span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>
-git config user.name <span style=color:#e6db74>&#34;mohseenrm&#34;</span>
-
-git commit -m <span style=color:#e6db74>&#34;Publishing new blog post&#34;</span>
-git push origin master
-</code></pre></div><p>Done! 🚀 Finally let&rsquo;s send a notification email to let us know it was successful.</p><p>In order to pass data from <code>BashOperator</code> to a Python task, we would need to echo some sort of result.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>BLOG_URL<span style=color:#f92672>=(</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>BLOG_FILENAME%%.*<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span><span style=color:#f92672>)</span>
-echo <span style=color:#e6db74>&#34;https://mohseen.dev/post/</span><span style=color:#e6db74>${</span>BLOG_URL<span style=color:#e6db74>}</span><span style=color:#e6db74>@</span><span style=color:#e6db74>${</span>BLOG_TITLE<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</code></pre></div><p>Great, lastly I used <a href=https://sendgrid.com/>Sendgrid</a> to send emails, but you can use any email provider you like.
-It was pretty smooth sailing from here on out. Let&rsquo;s fetch the needed <code>ENV</code> variables and send this sucker to the inbox.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;send_success_email&#34;</span>)
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>send_success_email</span>(ti<span style=color:#f92672>=</span>None):
-        context <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;publish_blog_post&#34;</span>)
-        content <span style=color:#f92672>=</span> context<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#34;@&#34;</span>)
-        <span style=color:#66d9ef>assert</span> len(content) <span style=color:#f92672>==</span> <span style=color:#ae81ff>2</span>
-        url, title <span style=color:#f92672>=</span> content[<span style=color:#ae81ff>0</span>], content[<span style=color:#ae81ff>1</span>]
-
-        <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>capitalize_words</span>(s):
-            <span style=color:#66d9ef>return</span> re<span style=color:#f92672>.</span>sub(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#34;\w+&#34;</span>, <span style=color:#66d9ef>lambda</span> m: m<span style=color:#f92672>.</span>group(<span style=color:#ae81ff>0</span>)<span style=color:#f92672>.</span>capitalize(), s)
-
-        title <span style=color:#f92672>=</span> capitalize_words(title)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;-&#34;</span>, <span style=color:#e6db74>&#34; &#34;</span>)
-
-        message <span style=color:#f92672>=</span> Mail(
-            from_email<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-publisher@mohseen.dev&#34;</span>,
-            to_emails<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>],
-        )
-        message<span style=color:#f92672>.</span>dynamic_template_data <span style=color:#f92672>=</span> {
-            <span style=color:#e6db74>&#34;title&#34;</span>: title,
-            <span style=color:#e6db74>&#34;blog_post_url&#34;</span>: url,
-        }
-        message<span style=color:#f92672>.</span>template_id <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_SUCCESS_TEMPLATE&#34;</span>)
-
-        <span style=color:#66d9ef>try</span>:
-            sg <span style=color:#f92672>=</span> SendGridAPIClient(Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_API_KEY&#34;</span>))
-            response <span style=color:#f92672>=</span> sg<span style=color:#f92672>.</span>send(message)
-            code, body, headers <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>status_code, response<span style=color:#f92672>.</span>body, response<span style=color:#f92672>.</span>headers
-            <span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#34;Response code: {code}&#34;</span>)
-            <span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#34;Response headers: {headers}&#34;</span>)
-            <span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#34;Response body: {body}&#34;</span>)
-            <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Success Message Sent!&#34;</span>)
-            <span style=color:#66d9ef>return</span> str(response<span style=color:#f92672>.</span>status_code)
-        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>Exception</span> <span style=color:#66d9ef>as</span> e:
-            <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Error: {0}&#34;</span><span style=color:#f92672>.</span>format(e))
-            <span style=color:#66d9ef>raise</span> e
-</code></pre></div><p>This is an ideal scenario where nothing ever goes wrong. Luckily for us, we can configure Airflow to trigger a different task if any of the previous task fails.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;send_failure_email&#34;</span>, trigger_rule<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;one_failed&#34;</span>)
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>send_failure_email</span>(ti<span style=color:#f92672>=</span>None):
-        message <span style=color:#f92672>=</span> Mail(
-            from_email<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-publisher@mohseen.dev&#34;</span>,
-            to_emails<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>],
-        )
-        message<span style=color:#f92672>.</span>template_id <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_FAILURE_TEMPLATE&#34;</span>)
-
-        <span style=color:#66d9ef>try</span>:
-            sg <span style=color:#f92672>=</span> SendGridAPIClient(Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_API_KEY&#34;</span>))
-            response <span style=color:#f92672>=</span> sg<span style=color:#f92672>.</span>send(message)
-            code, body, headers <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>status_code, response<span style=color:#f92672>.</span>body, response<span style=color:#f92672>.</span>headers
-            <span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#34;Response code: {code}&#34;</span>)
-            <span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#34;Response headers: {headers}&#34;</span>)
-            <span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#34;Response body: {body}&#34;</span>)
-            <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Failure Message Sent!&#34;</span>)
-            <span style=color:#66d9ef>return</span> str(response<span style=color:#f92672>.</span>status_code)
-        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>Exception</span> <span style=color:#66d9ef>as</span> e:
-            <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Error: {0}&#34;</span><span style=color:#f92672>.</span>format(e))
-            <span style=color:#66d9ef>raise</span> e
-</code></pre></div><p>All that&rsquo;s left is to define the fallback task in relation to the previous tasks, so that it can catch failures and send me a fun email.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>send_failure_email <span style=color:#f92672>&gt;&gt;</span> end
-
-<span style=color:#75715e># Setup fallback for failure</span>
-pick_topic <span style=color:#f92672>&gt;&gt;</span> [call_gpt, send_failure_email]
-call_gpt <span style=color:#f92672>&gt;&gt;</span> [process_blog_post, send_failure_email]
-process_blog_post <span style=color:#f92672>&gt;&gt;</span> [fetch_images, send_failure_email]
-fetch_images <span style=color:#f92672>&gt;&gt;</span> [process_images, send_failure_email]
-process_images <span style=color:#f92672>&gt;&gt;</span> [run, send_failure_email]
-run <span style=color:#f92672>&gt;&gt;</span> [send_success_email, send_failure_email]
-send_success_email <span style=color:#f92672>&gt;&gt;</span> end
-</code></pre></div><p>Here&rsquo;s a visual representation of the DAG we just defined.</p><div class=Image__Medium><img src=/images/gpt-2.png alt="alt text for large image"></div><p>The key part of the fallback task is the <code>trigger_rule</code>. It only runs if any of the parent tasks fails. This is a great way to handle failures and send notifications to the relevant parties.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;send_failure_email&#34;</span>, trigger_rule<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;one_failed&#34;</span>)
-</code></pre></div><p>Aiflow let&rsquo;s you <a href=https://airflow.apache.org/docs/apache-airflow/1.10.10/concepts.html#trigger-rules>configure different rules</a> for triggering tasks based on the state of the previous tasks.
-It&rsquo;s pretty nifty and now my go-to anytime I need to automate something.</p><p>Once Airflow and GPT have done their magic, I get a nice email with the link to the blog post.</p><div class=Image__Medium><img src=/images/gpt-3.png alt="alt text for large image"></div><p>All I got to do is review it, make any changes and publish it. I can also trigger this manually from the UI if I&rsquo;m feeling lucky.</p><h2 id=conclusion>Conclusion</h2><p>This was a fun experiment, and I&rsquo;m glad I got to learn a lot about Airflow and GPT-4. I&rsquo;m sure there are a lot of ways to improve this, but for now I&rsquo;m happily letting it crunch a few posts on my blog.</p><hr><p>Image credits: <a href=https://unsplash.com/>Unsplash</a></p></article><section id=articleNext class="section nartrow"><h3 class=footer-next-heading>More articles from Mohseen</h3><div class=footer-spacer></div><div class=next-articles-grid numberofarticles={numberOfArticles}><div class=post-row><a href=/post/2023-10-03-master-the-code-beast-an-absolute-guide-to-profiling-in-nodejs/ class=article-link id=article-link-bigger><div><div class=image-container><img src=/images/hero/master-the-code-beast-an-absolute-guide-to-profiling-in-nodejs.preview.jpg class=article-image></div><div><h2 class=article-title>Master the Code Beast: An Absolute Guide to Profiling in NodeJS</h2><p class=article-excerpt>Fine-tuning your Node.js application's performance has never been easier. Dive deep into profiling your Node.js applications and reveal the secret behind peak performing servers.</p><div class=article-metadata>October 3, 2023 · 3 min read</div></div></div></a><a href=/post/2023-10-03-unveiling-the-art-of-advanced-bash-scripting/ class=article-link><div><div class=image-container><img src=/images/hero/unveiling-the-art-of-advanced-bash-scripting.preview.jpg class=article-image></div><div><h2 class=article-title>Unveiling the Art of Advanced Bash Scripting</h2><p class=article-excerpt>Deep dive into the intriguing world of Bash scripting to automate your tasks, optimize code, and bootstrap your journey with advanced code writing skills.</p><div class=article-metadata>October 3, 2023 · 3 min read</div></div></div></a></div></div></section></section><script src=/js/progressBar.js></script><div class=footer-gradient></div><div class="section narrow"><div class=footer-hr></div><div class=footer-container><div class=footer-text>© 2024 Mohseen</div><div class=social-icon-outer><div class=social-icon-container><a href=https://facebook.com/momo3300><svg class="social-icon-image" width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M4.36849 7.36482H6.35279L6.64986 4.99457H4.36849V3.48124C4.36849 2.79501 4.55373 2.32731 5.5103 2.32731L6.73028 2.32673V.206821C6.51919.17804 5.79505.113525 4.95257.113525 3.19363.113525 1.98943 1.21807 1.98943 3.24662V4.99464H0V7.36488H1.98936V13.4469L4.36849 13.4468V7.36482z" fill="#73737d"/></svg></a><span class=hidden>https://facebook.com/momo3300</span>
-<a href=https://github.com/mohseenrm><svg class="social-icon-image" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M7 0C3.1325.0.0 3.21173.0 7.17706.0 10.3529 2.00375 13.0353 4.78625 13.9863 5.13625 14.0491 5.2675 13.8338 5.2675 13.6454 5.2675 13.4749 5.25875 12.9097 5.25875 12.3087 3.5 12.6406 3.045 11.8691 2.905 11.4653 2.82625 11.259 2.485 10.622 2.1875 10.4516 1.9425 10.317 1.5925 9.98508 2.17875 9.97611 2.73 9.96714 3.12375 10.4964 3.255 10.7118 3.885 11.7973 4.89125 11.4923 5.29375 11.3039 5.355 10.8374 5.53875 10.5234 5.74 10.3439 4.1825 10.1645 2.555 9.54549 2.555 6.80026 2.555 6.01976 2.82625 5.37382 3.2725 4.87143 3.2025 4.692 2.9575 3.95635 3.3425 2.96951 3.3425 2.96951 3.92875 2.78111 5.2675 3.70516 5.8275 3.54367 6.4225 3.46293 7.0175 3.46293S8.2075 3.54367 8.7675 3.70516C10.1063 2.77214 10.6925 2.96951 10.6925 2.96951 11.0775 3.95635 10.8325 4.692 10.7625 4.87143 11.2087 5.37382 11.48 6.01079 11.48 6.80026 11.48 9.55446 9.84375 10.1645 8.28625 10.3439 8.54 10.5682 8.75875 10.9988 8.75875 11.6717 8.75875 12.6316 8.75 13.4032 8.75 13.6454 8.75 13.8338 8.88125 14.0581 9.23125 13.9863 11.9963 13.0353 14 10.3439 14 7.17706 14 3.21173 10.8675.0 7 0z" fill="#73737d"/></svg></a><span class=hidden>https://github.com/mohseenrm</span>
-<a href=https://instagram.com/mohseenrm><svg class="social-icon-image" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M-305176e-10 3.97163C-305176e-10 1.77803 1.77824-244141e-9 3.97184-244141e-9H9.0281C11.2217-244141e-9 13 1.77802 13 3.97163V9.02788C13 11.2215 11.2217 12.9998 9.0281 12.9998H3.97184C1.77824 12.9998-305176e-10 11.2215-305176e-10 9.02789V3.97163zM3.97184 1.281C2.48585 1.281 1.28122 2.48564 1.28122 3.97163V9.02789C1.28122 10.5139 2.48585 11.7185 3.97184 11.7185H9.0281C10.5141 11.7185 11.7187 10.5139 11.7187 9.02788V3.97163C11.7187 2.48564 10.5141 1.281 9.0281 1.281H3.97184z" fill="#73737d"/><path fillRule="evenodd" clipRule="evenodd" d="M3.07483 6.55115C3.07483 4.64454 4.61242 3.09253 6.51702 3.09253 8.42162 3.09253 9.95921 4.64454 9.95921 6.55115S8.42162 10.0098 6.51702 10.0098C4.61242 10.0098 3.07483 8.45776 3.07483 6.55115zM6.51702 4.37378C5.32709 4.37378 4.35608 5.34508 4.35608 6.55115 4.35608 7.75722 5.32709 8.72853 6.51702 8.72853 7.70695 8.72853 8.67796 7.75722 8.67796 6.55115 8.67796 5.34508 7.70695 4.37378 6.51702 4.37378z" fill="#73737d"/><path fillRule="evenodd" clipRule="evenodd" d="M9.95062 3.87075C10.4035 3.87075 10.7706 3.50149 10.7706 3.04597 10.7706 2.59046 10.4035 2.22119 9.95062 2.22119 9.49776 2.22119 9.13065 2.59046 9.13065 3.04597 9.13065 3.50149 9.49776 3.87075 9.95062 3.87075z" fill="#73737d"/></svg></a><span class=hidden>https://instagram.com/mohseenrm</span>
-<a href=https://www.linkedin.com/in/mohseenrm><svg class="social-icon-image" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M3.59615 13.125H.871552V4.36523H3.59615V13.125zM2.24847 3.16406C1.81878 3.16406 1.44769 3.00781 1.13519 2.69531.822692 2.38281.666443 2.01171.666443 1.58203.666443 1.15234.822692.781248 1.13519.468749 1.44769.156249 1.81878.0 2.24847.0S3.04925.156249 3.36175.468749C3.67425.781248 3.8305 1.15234 3.8305 1.58203 3.8305 2.01171 3.67425 2.38281 3.36175 2.69531S2.67816 3.16406 2.24847 3.16406zM13.7915 13.125H11.0669V8.84765C11.0669 8.14452 11.0083 7.63671 10.8911 7.32421 10.6763 6.79687 10.2563 6.5332 9.63134 6.5332 9.00634 6.5332 8.56689 6.76757 8.31298 7.23632 8.11767 7.58788 8.02001 8.10546 8.02001 8.78905V13.125H5.32471V4.36523H7.93212V5.5664H7.96142C8.15673 5.17578 8.46923 4.85351 8.89892 4.59961 9.36767 4.28711 9.91454 4.13086 10.5395 4.13086 11.8091 4.13086 12.6977 4.53125 13.2055 5.33203 13.5962 5.97656 13.7915 6.97265 13.7915 8.3203V13.125z" fill="#73737d"/></svg></a><span class=hidden>https://www.linkedin.com/in/mohseenrm</span></div></div></div></div></div><script src=/js/prism.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','G-WBJ981VMT6','auto');ga('send','pageview');}</script></body></html>
+A dockerized version of Airflow with all Pythonic and Bashy goodness was all I needed to get started.</p><blockquote><p>Repo for this project is available <a href=https://github.com/mohseenrm/gpt-publisher>here</a></p></blockquote><p>Airflow lets you define DAGs (Directed Acyclic Graphs) which are essentially a set of tasks that are executed in a specific order. It also allows fine grained control on how/what triggers them, how to handle outputs from different operators, build in retries, catchup and a lot more.</p><p>After installing dependencies, I needed to get it Dockerized and running on my local machine. I used the <a href=https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml>official docker-compose</a> file to get started.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>version</span>: <span style=color:#e6db74>&#39;3.8&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>x-airflow-common</span>:
+</span></span><span style=display:flex><span>  <span style=color:#75715e>&amp;airflow-common</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># In order to add custom dependencies or upgrade provider packages you can use your extended image.</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># Comment the image line, place your Dockerfile in the directory where you placed the docker-compose.yaml</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># and uncomment the &#34;build&#34; line below, Then run `docker-compose build` to build the images.</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>#  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.1}</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>build</span>: <span style=color:#ae81ff>.</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>environment</span>:
+</span></span><span style=display:flex><span>    <span style=color:#75715e>&amp;airflow-common-env</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CORE__EXECUTOR</span>: <span style=color:#ae81ff>CeleryExecutor</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__DATABASE__SQL_ALCHEMY_CONN</span>: <span style=color:#ae81ff>postgresql+psycopg2://airflow:airflow@postgres/airflow</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># For backward compatibility, with Airflow &lt;2.3</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CORE__SQL_ALCHEMY_CONN</span>: <span style=color:#ae81ff>postgresql+psycopg2://airflow:airflow@postgres/airflow</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CELERY__RESULT_BACKEND</span>: <span style=color:#ae81ff>db+postgresql://airflow:airflow@postgres/airflow</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CELERY__BROKER_URL</span>: <span style=color:#ae81ff>redis://:@redis:6379/0</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CORE__FERNET_KEY</span>: <span style=color:#e6db74>&#39;&#39;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION</span>: <span style=color:#e6db74>&#39;true&#39;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CORE__LOAD_EXAMPLES</span>: <span style=color:#e6db74>&#39;true&#39;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__API__AUTH_BACKENDS</span>: <span style=color:#e6db74>&#39;airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session&#39;</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># yamllint disable rule:line-length</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Use simple http server on scheduler for health checks</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># See https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/check-health.html#scheduler-health-check-server</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># yamllint enable rule:line-length</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK</span>: <span style=color:#e6db74>&#39;true&#39;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_TOKEN</span>: <span style=color:#ae81ff>${GITHUB_TOKEN:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_USER</span>: <span style=color:#ae81ff>${GITHUB_USER:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_REPOSITORY:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_OPENAI_API_KEY</span>: <span style=color:#ae81ff>${OPENAI_API_KEY:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_GITHUB_WEBSITE_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_WEBSITE_REPOSITORY:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_UNSPLASH_TOKEN</span>: <span style=color:#ae81ff>${UNSPLASH_TOKEN:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_SENDGRID_API_KEY</span>: <span style=color:#ae81ff>${SENDGRID_API_KEY:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_SENDGRID_SUCCESS_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_SUCCESS_TEMPLATE:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW_VAR_SENDGRID_FAILURE_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_FAILURE_TEMPLATE:-}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>AIRFLOW__CORE__HIDE_SENSITIVE_VAR_CONN_FIELDS</span>: <span style=color:#ae81ff>${AIRFLOW__CORE__HIDE_SENSITIVE_VAR_CONN_FIELDS:-&#39;true&#39;}</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># for other purpose (development, test and especially production usage) build/extend Airflow image.</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>_PIP_ADDITIONAL_REQUIREMENTS</span>: <span style=color:#ae81ff>${_PIP_ADDITIONAL_REQUIREMENTS:-}</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>volumes</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags</span>
+</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs</span>
+</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config</span>
+</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins</span>
+</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>${AIRFLOW_PROJ_DIR:-.}/constants:/opt/airflow/gpt_publisher/constants</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>user</span>: <span style=color:#e6db74>&#34;${AIRFLOW_UID:-50000}:0&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>depends_on</span>:
+</span></span><span style=display:flex><span>    <span style=color:#75715e>&amp;airflow-common-depends-on</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>redis</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_healthy</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>postgres</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_healthy</span>
+</span></span></code></pre></div><p>By default Airflow uses a SQLite database, but I wanted to use a more standardized way for running and scheduling tasks. So I opted for Postgres and Redis as the backend and message broker. It truly is wild how many different ways you can set Airflow up. Docker does solve a key problem <span class=highlight-block>Portability</span> and <span class=highlight-block>Dependency Management</span>.</p><p>Once I had Redis and Postgres services defined, all I needed to do was add my flavor of dependencies for fetching, processing and uploading these files to my blog.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>services</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>postgres</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>image</span>: <span style=color:#ae81ff>postgres:13</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>environment</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>POSTGRES_USER</span>: <span style=color:#ae81ff>airflow</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>POSTGRES_PASSWORD</span>: <span style=color:#ae81ff>airflow</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>POSTGRES_DB</span>: <span style=color:#ae81ff>airflow</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>volumes</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#ae81ff>postgres-db-volume:/var/lib/postgresql/data</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>healthcheck</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;pg_isready&#34;</span>, <span style=color:#e6db74>&#34;-U&#34;</span>, <span style=color:#e6db74>&#34;airflow&#34;</span>]
+</span></span><span style=display:flex><span>      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>10s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>5</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>5s</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>redis</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>image</span>: <span style=color:#ae81ff>redis:latest</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>expose</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#ae81ff>6379</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>healthcheck</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;redis-cli&#34;</span>, <span style=color:#e6db74>&#34;ping&#34;</span>]
+</span></span><span style=display:flex><span>      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>10s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>timeout</span>: <span style=color:#ae81ff>30s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>50</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>30s</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>airflow-webserver</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>command</span>: <span style=color:#ae81ff>webserver</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>ports</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#e6db74>&#34;8080:8080&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>healthcheck</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;curl&#34;</span>, <span style=color:#e6db74>&#34;--fail&#34;</span>, <span style=color:#e6db74>&#34;http://localhost:8080/health&#34;</span>]
+</span></span><span style=display:flex><span>      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>30s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>timeout</span>: <span style=color:#ae81ff>10s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>5</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>30s</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>depends_on</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common-depends-on</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>airflow-init</span>:
+</span></span><span style=display:flex><span>        <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_completed_successfully</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>airflow-scheduler</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>command</span>: <span style=color:#ae81ff>scheduler</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>healthcheck</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>test</span>: [<span style=color:#e6db74>&#34;CMD&#34;</span>, <span style=color:#e6db74>&#34;curl&#34;</span>, <span style=color:#e6db74>&#34;--fail&#34;</span>, <span style=color:#e6db74>&#34;http://localhost:8974/health&#34;</span>]
+</span></span><span style=display:flex><span>      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>30s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>timeout</span>: <span style=color:#ae81ff>10s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>retries</span>: <span style=color:#ae81ff>5</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>start_period</span>: <span style=color:#ae81ff>30s</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>restart</span>: <span style=color:#ae81ff>always</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>depends_on</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>&lt;&lt;</span>: <span style=color:#75715e>*airflow-common-depends-on</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>airflow-init</span>:
+</span></span><span style=display:flex><span>        <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>service_completed_successfully</span>
+</span></span></code></pre></div><h2 id=creating-the-dag>Creating the DAG</h2><p>Once I had the dependencies sorted, I needed to create a DAG that would do a few key things:</p><ol><li>Pick a random theme for blog post</li><li>Fetch content from GPT-4</li><li>Validate and fetch images from Unsplash</li><li>Process images and remove any unnecessary content</li><li>Build the website</li><li>Upload the website to Github</li><li>Send a notification email on success or failure</li><li>Run this every Friday at 10:00 AM</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>with</span> DAG(
+</span></span><span style=display:flex><span>    dag_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;publish_blog_post&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Once every week on Friday at 10:00 AM UTC</span>
+</span></span><span style=display:flex><span>    schedule<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;0 10 * * 5&#34;</span>,
+</span></span><span style=display:flex><span>    start_date<span style=color:#f92672>=</span>pendulum<span style=color:#f92672>.</span>datetime(<span style=color:#ae81ff>2021</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, tz<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;UTC&#34;</span>),
+</span></span><span style=display:flex><span>    catchup<span style=color:#f92672>=</span><span style=color:#66d9ef>False</span>,
+</span></span><span style=display:flex><span>    dagrun_timeout<span style=color:#f92672>=</span>datetime<span style=color:#f92672>.</span>timedelta(minutes<span style=color:#f92672>=</span><span style=color:#ae81ff>60</span>),
+</span></span><span style=display:flex><span>    tags<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#34;gpt-publisher&#34;</span>],
+</span></span><span style=display:flex><span>    render_template_as_native_obj<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>,
+</span></span><span style=display:flex><span>) <span style=color:#66d9ef>as</span> dag:
+</span></span></code></pre></div><p>Once you have a dag defined, the scheduler will pick it up and start running it at the specified time. You can also trigger it manually from the UI.</p><p>Next, how to inject secrets and tokens to Airflow container. Airflow provide a lot of way to configure this, but the one I found best suited for this was <a href=https://airflow.apache.org/docs/apache-airflow/stable/howto/variable.html>Variables</a>.</p><p>You can inject any environment variable from your Docker container into an Airflow variable by prefixing it with <code>AIRFLOW_VAR*</code>. This does store it in the metadata database, so might come with some perf hit when reading, but it was good enough for my use case.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_GITHUB_TOKEN</span>: <span style=color:#ae81ff>${GITHUB_TOKEN:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_GITHUB_USER</span>: <span style=color:#ae81ff>${GITHUB_USER:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_GITHUB_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_REPOSITORY:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_OPENAI_API_KEY</span>: <span style=color:#ae81ff>${OPENAI_API_KEY:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_GITHUB_WEBSITE_REPOSITORY</span>: <span style=color:#ae81ff>${GITHUB_WEBSITE_REPOSITORY:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_UNSPLASH_TOKEN</span>: <span style=color:#ae81ff>${UNSPLASH_TOKEN:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_SENDGRID_API_KEY</span>: <span style=color:#ae81ff>${SENDGRID_API_KEY:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_SENDGRID_SUCCESS_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_SUCCESS_TEMPLATE:-}</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>AIRFLOW_VAR_SENDGRID_FAILURE_TEMPLATE</span>: <span style=color:#ae81ff>${SENDGRID_FAILURE_TEMPLATE:-}</span>
+</span></span></code></pre></div><p>Docker compose picks up any local <code>.env</code> you may have, and inject it for you.</p><p>Finally, let&rsquo;s define the <code>Dockerfile</code> that has extra dependencies we might need to successfully pull this off.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dockerfile data-lang=dockerfile><span style=display:flex><span><span style=color:#66d9ef>FROM</span><span style=color:#e6db74> apache/airflow:2.7.1</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>USER</span><span style=color:#e6db74> root</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> apt-get update <span style=color:#f92672>&amp;&amp;</span> apt-get install -y <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>    git<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>LABEL</span> authors<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;momo&#34;</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /tmp</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> curl -L https://go.dev/dl/go1.21.1.linux-amd64.tar.gz &gt; go1.21.1.linux-amd64.tar.gz<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> rm -rf /usr/local/go <span style=color:#f92672>&amp;&amp;</span> tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>ENV</span> PATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/usr/local/go/bin:</span><span style=color:#e6db74>${</span>PATH<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>ENV</span> GOPATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/usr/local/go&#34;</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> go version<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> rm -rf /tmp/go1.21.1.linux-amd64.tar.gz<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> apt-get install hugo -y<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> hugo version<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#75715e># Install package dependencies</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>USER</span><span style=color:#e6db74> airflow</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /opt/airflow</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> requirements.txt requirements.txt<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> setup.py setup.py<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> pip install --upgrade pip<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> mkdir -p gpt_publisher<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /opt/airflow/gpt_publisher</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>COPY</span> gpt_publisher/__init__.py __init__.py<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>WORKDIR</span><span style=color:#e6db74> /opt/airflow</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> echo <span style=color:#e6db74>&#34;Installing base package&#34;</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> pip install -e .<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> echo <span style=color:#e6db74>&#34;Installing requirements&#34;</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> pip install -r requirements.txt<span style=color:#960050;background-color:#1e0010>
+</span></span></span></code></pre></div><h2 id=graphing-the-tasks>Graphing the tasks</h2><p>Once Airflow is good to go, we now start with defining the tasks that need to be executed in a specific order. Airflow provides a lot of operators out of the box, but you can also create your own custom operators.</p><p>First task involves picking a random topic from a predefined list</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pick_topic&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>pick_topic</span>():
+</span></span><span style=display:flex><span>        length <span style=color:#f92672>=</span> len(GPT_TOPICS)
+</span></span><span style=display:flex><span>        index <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, length <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> GPT_TOPICS[index]
+</span></span></code></pre></div><p>Pretty straightforward, next we need to send the topic of choice to GPT-4</p><h3 id=fetching-content-from-gpt-4>Fetching Content from GPT-4</h3><p>I used the <a href=https://github.com/openai/openai-python>OpenAI Python Client</a> client to get chat completions based on my prompts.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;call_gpt&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>call_gpt</span>(ti<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Calls ChatGPT 4 to generate a blog post
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>        theme <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pick_topic&#34;</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> theme <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>or</span> theme <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        prompt <span style=color:#f92672>=</span> gpt_prompt(theme)
+</span></span><span style=display:flex><span>        openai_api_key <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;OPENAI_API_KEY&#34;</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> openai_api_key <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>or</span> openai_api_key <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        openai<span style=color:#f92672>.</span>api_key <span style=color:#f92672>=</span> openai_api_key
+</span></span><span style=display:flex><span>        response <span style=color:#f92672>=</span> openai<span style=color:#f92672>.</span>ChatCompletion<span style=color:#f92672>.</span>create(
+</span></span><span style=display:flex><span>            model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-4&#34;</span>, messages<span style=color:#f92672>=</span>[{<span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>, <span style=color:#e6db74>&#34;content&#34;</span>: prompt}]
+</span></span><span style=display:flex><span>        )
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        raw_text <span style=color:#f92672>=</span> response[<span style=color:#e6db74>&#34;choices&#34;</span>][<span style=color:#ae81ff>0</span>][<span style=color:#e6db74>&#34;message&#34;</span>][<span style=color:#e6db74>&#34;content&#34;</span>]
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> raw_text <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>or</span> raw_text <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> raw_text
+</span></span></code></pre></div><p>One fascinating wrinkle with Airflow tasks is they need to communicate the results of runs with each other. Airflow solves this with <span class=highlight-block>XCom</span>.
+XCom allows dependent tasks to pull relevant information from the previous task and use it in their own execution. It&rsquo;s sort of like passing around a context in a request flow</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>theme <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pick_topic&#34;</span>)
+</span></span></code></pre></div><p>Once available we can use it and send the GPT-4 response for further processing.</p><h3 id=processing-blog-post-response>Processing Blog post response</h3><p>This is where things get a bit tricky, GPT-4 is not perfect and it does make mistakes. So we need to validate the response and make sure it&rsquo;s good enough to be posted.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;process_blog_post&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>process_blog_post</span>(ti<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Processes the blog post, sanitizes date and tags
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;call_gpt&#34;</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> post <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>or</span> post <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        date <span style=color:#f92672>=</span> datetime<span style=color:#f92672>.</span>datetime<span style=color:#f92672>.</span>now()<span style=color:#f92672>.</span>isoformat()<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#34;T&#34;</span>)[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(DATE_TIME_REGEX, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;date: </span><span style=color:#e6db74>{</span>date<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>, post)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        tags <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>findall(TAGS_REGEX, post)
+</span></span><span style=display:flex><span>        tags <span style=color:#f92672>=</span> tags[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#34;,&#34;</span>)
+</span></span><span style=display:flex><span>        tags <span style=color:#f92672>=</span> [tag<span style=color:#f92672>.</span>strip() <span style=color:#66d9ef>for</span> tag <span style=color:#f92672>in</span> tags]
+</span></span><span style=display:flex><span>        tags <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>            tag<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;_&#34;</span>, <span style=color:#e6db74>&#34; &#34;</span>)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;-&#34;</span>, <span style=color:#e6db74>&#34; &#34;</span>)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#39;&#34;&#39;</span>, <span style=color:#e6db74>&#34;&#34;</span>)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;&#39;&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>for</span> tag <span style=color:#f92672>in</span> tags
+</span></span><span style=display:flex><span>        ]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        raw_title <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>findall(TITLE_REGEX, post)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> raw_title <span style=color:#f92672>and</span> len(raw_title) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        raw_title <span style=color:#f92672>=</span> raw_title[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>strip()
+</span></span><span style=display:flex><span>        title_words <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>findall(WORD_REGEX, raw_title)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> title_words <span style=color:#f92672>and</span> len(title_words) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>        title_words <span style=color:#f92672>=</span> [word<span style=color:#f92672>.</span>lower() <span style=color:#66d9ef>for</span> word <span style=color:#f92672>in</span> title_words]
+</span></span><span style=display:flex><span>        title_words <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;-&#34;</span><span style=color:#f92672>.</span>join(title_words)
+</span></span><span style=display:flex><span>        file_name <span style=color:#f92672>=</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>date<span style=color:#e6db74>}</span><span style=color:#e6db74>-</span><span style=color:#e6db74>{</span>title_words<span style=color:#e6db74>}</span><span style=color:#e6db74>.md&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;post&#34;</span>: post,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tags&#34;</span>: tags,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;date&#34;</span>: date,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;file_name&#34;</span>: file_name,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;title&#34;</span>: title_words,
+</span></span><span style=display:flex><span>        }
+</span></span></code></pre></div><h3 id=fetching-images-from-unsplash>Fetching Images from Unsplash</h3><p>After we sanitize the post, we can fetch relevant images from <a href=https://unsplash.com/>Unsplash</a> and add them to the post.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fetch_images&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>fetch_images</span>(ti<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+</span></span><span style=display:flex><span>        context <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;process_blog_post&#34;</span>)
+</span></span><span style=display:flex><span>        tags <span style=color:#f92672>=</span> context[<span style=color:#e6db74>&#34;tags&#34;</span>][:<span style=color:#ae81ff>2</span>]
+</span></span><span style=display:flex><span>        query <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;, &#34;</span><span style=color:#f92672>.</span>join(tags)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        token <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;UNSPLASH_TOKEN&#34;</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> token <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>or</span> token <span style=color:#f92672>is</span> <span style=color:#f92672>not</span> <span style=color:#e6db74>&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        headers <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;Authorization&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Client-ID </span><span style=color:#e6db74>{</span>token<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        url <span style=color:#f92672>=</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>{</span>UNSPLASH_BASE_URL<span style=color:#e6db74>}</span><span style=color:#e6db74>/search/photos&#34;</span>
+</span></span><span style=display:flex><span>        params <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;query&#34;</span>: query,
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>get(url, headers<span style=color:#f92672>=</span>headers, params<span style=color:#f92672>=</span>params)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        json <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>json()
+</span></span><span style=display:flex><span>        results <span style=color:#f92672>=</span> json[<span style=color:#e6db74>&#34;results&#34;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> results <span style=color:#f92672>and</span> len(results) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        idx <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, len(results) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>        image_urls <span style=color:#f92672>=</span> results[idx][<span style=color:#e6db74>&#34;urls&#34;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        preview <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;small&#34;</span>]
+</span></span><span style=display:flex><span>        desktop <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;full&#34;</span>]
+</span></span><span style=display:flex><span>        tablet <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;regular&#34;</span>]
+</span></span><span style=display:flex><span>        mobile <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;small&#34;</span>]
+</span></span><span style=display:flex><span>        fallback <span style=color:#f92672>=</span> image_urls[<span style=color:#e6db74>&#34;thumb&#34;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>            <span style=color:#f92672>**</span>context,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;preview&#34;</span>: preview,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;desktop&#34;</span>: desktop,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tablet&#34;</span>: tablet,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;mobile&#34;</span>: mobile,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;fallback&#34;</span>: fallback,
+</span></span><span style=display:flex><span>        }
+</span></span></code></pre></div><p>Next up, is preparing the images for downloading them into the blog post.</p><h3 id=processing-images>Processing Images</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;process_images&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>process_images</span>(ti<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+</span></span><span style=display:flex><span>        context <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fetch_images&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> context[<span style=color:#e6db74>&#34;post&#34;</span>]
+</span></span><span style=display:flex><span>        title <span style=color:#f92672>=</span> context[<span style=color:#e6db74>&#34;title&#34;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(PREVIEW_REGEX, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34; /images/hero/</span><span style=color:#e6db74>{</span>title<span style=color:#e6db74>}</span><span style=color:#e6db74>.preview.jpg&#34;</span>, post)
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(DESKTOP_REGEX, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34; /images/hero/</span><span style=color:#e6db74>{</span>title<span style=color:#e6db74>}</span><span style=color:#e6db74>.desktop.jpg&#34;</span>, post)
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(TABLET_REGEX, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34; /images/hero/</span><span style=color:#e6db74>{</span>title<span style=color:#e6db74>}</span><span style=color:#e6db74>.tablet.jpg&#34;</span>, post)
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(MOBILE_REGEX, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34; /images/hero/</span><span style=color:#e6db74>{</span>title<span style=color:#e6db74>}</span><span style=color:#e6db74>.mobile.jpg&#34;</span>, post)
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> re<span style=color:#f92672>.</span>sub(FALLBACK_REGEX, <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34; /images/hero/</span><span style=color:#e6db74>{</span>title<span style=color:#e6db74>}</span><span style=color:#e6db74>.fallback.jpg&#34;</span>, post)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Weird hack for jinja2 template rendering, that strips out newlines</span>
+</span></span><span style=display:flex><span>        post <span style=color:#f92672>=</span> post<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, <span style=color:#e6db74>&#34;&lt;NEW_LINE_TOKEN&gt;&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>            <span style=color:#f92672>**</span>context,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;post&#34;</span>: post,
+</span></span><span style=display:flex><span>        }
+</span></span></code></pre></div><p>Given our template that&rsquo;s predominantly used in Hugo, we swap in the correct values at run time and make sure the images are available for Hugo to pick up.</p><h3 id=piecing-it-all-together>Piecing it all together</h3><p>Lastly, we need to gather all relevant tags, post, images and build the website.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>run <span style=color:#f92672>=</span> BashOperator(
+</span></span><span style=display:flex><span>        task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;publish_blog_post&#34;</span>,
+</span></span><span style=display:flex><span>        bash_command<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/opt/airflow/dags/scripts/publish.sh &#34;</span>,
+</span></span><span style=display:flex><span>        env<span style=color:#f92672>=</span>{
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;GITHUB_WEBSITE_REPOSITORY&#34;</span>: Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;GITHUB_WEBSITE_REPOSITORY&#34;</span>),
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;GITHUB_REPOSITORY&#34;</span>: Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;GITHUB_REPOSITORY&#34;</span>),
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;CLONE_URL&#34;</span>: clone_url,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;CLONE_WEBSITE_REPO_URL&#34;</span>: website_repo_url,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;BLOG_FILENAME&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;file_name&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;BLOG_CONTENT&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;post&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;PREVIEW_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;preview&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;DESKTOP_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;desktop&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;TABLET_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;tablet&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;MOBILE_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;mobile&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;FALLBACK_URL&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;fallback&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;BLOG_TITLE&#34;</span>: <span style=color:#e6db74>&#34;{{ ti.xcom_pull(task_ids=&#39;process_images&#39;)[&#39;title&#39;] }}&#34;</span>,
+</span></span><span style=display:flex><span>        },
+</span></span><span style=display:flex><span>        do_xcom_push<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>,
+</span></span><span style=display:flex><span>    )
+</span></span></code></pre></div><p>I chose the <a href=https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/bash.html>BashOperator</a> because it uses dependencies from the host OS (in our case, the Docker container) to weave together all the pieces from previous runs.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># Reaffirm GO path</span>
+</span></span><span style=display:flex><span>export PATH<span style=color:#f92672>=</span>/usr/local/go/bin:$PATH
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Cloning </span><span style=color:#e6db74>${</span>GITHUB_REPOSITORY<span style=color:#e6db74>}</span><span style=color:#e6db74> repo...&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Weird hack for jinja2 template rendering, that strips out newlines</span>
+</span></span><span style=display:flex><span>PARSED_BLOG_CONTENT<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>BLOG_CONTENT//&lt;NEW_LINE_TOKEN&gt;/<span style=color:#ae81ff>\\</span>n<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>mkdir -p /tmp/gh
+</span></span><span style=display:flex><span>cd /tmp/gh <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>rm -rf website-v7
+</span></span><span style=display:flex><span>git clone <span style=color:#e6db74>&#34;</span>$CLONE_URL<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>cd website-v7 <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>git checkout master
+</span></span><span style=display:flex><span>cd content/post <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Writing to file...&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>touch <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;</span>$PARSED_BLOG_CONTENT<span style=color:#e6db74>&#34;</span> &gt; <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Replace \n with actual newlines</span>
+</span></span><span style=display:flex><span>awk <span style=color:#e6db74>&#39;{gsub(/\\n/,&#34;\n&#34;)}1&#39;</span> <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span> &gt; <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>.tmp&#34;</span> <span style=color:#f92672>&amp;&amp;</span> mv <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>.tmp&#34;</span> <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>rm <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>.tmp&#34;</span>
+</span></span><span style=display:flex><span>ls -lart
+</span></span><span style=display:flex><span>cat <span style=color:#e6db74>&#34;</span>$BLOG_FILENAME<span style=color:#e6db74>&#34;</span>
+</span></span></code></pre></div><p>This script is responsible for cloning the website repo, writing the blog post to the correct directory. Once the blog post is setup, we need to download images for different screen sizes into the correct directory.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Downloading images...&#34;</span>
+</span></span><span style=display:flex><span>IMAGE_DIR<span style=color:#f92672>=</span>/tmp/gh/website-v7/static/images/hero
+</span></span><span style=display:flex><span>declare -a IMAGE_URLS<span style=color:#f92672>=(</span><span style=color:#e6db74>&#34;</span>$PREVIEW_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$DESKTOP_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$TABLET_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$MOBILE_URL<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span>$FALLBACK_URL<span style=color:#e6db74>&#34;</span><span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>declare -a IMAGE_LOCATIONS<span style=color:#f92672>=(</span><span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.preview.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.desktop.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.tablet.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.mobile.jpg <span style=color:#e6db74>&#34;</span>$IMAGE_DIR<span style=color:#e6db74>&#34;</span>/<span style=color:#e6db74>&#34;</span>$BLOG_TITLE<span style=color:#e6db74>&#34;</span>.fallback.jpg<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>IMAGE_SIZE<span style=color:#f92672>=</span><span style=color:#ae81ff>5</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> <span style=color:#f92672>((</span> i<span style=color:#f92672>=</span>0; i&lt;IMAGE_SIZE; i++ <span style=color:#f92672>))</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Downloading: </span><span style=color:#e6db74>${</span>IMAGE_URLS[$i]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>  curl -o <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>IMAGE_LOCATIONS[$i]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>IMAGE_URLS[$i]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><p>After the images are ready, it&rsquo;s time to push to Github.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Committing changes...&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>git config user.email <span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>
+</span></span><span style=display:flex><span>git config user.name <span style=color:#e6db74>&#34;mohseenrm&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>cd /tmp/gh/website-v7 <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>git add .
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;Adding new blog post&#34;</span>
+</span></span><span style=display:flex><span>git push origin master
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Done! </span>$BLOG_FILENAME<span style=color:#e6db74> published to master.&#34;</span>
+</span></span></code></pre></div><p>I have Hugo setup in a different repository that&rsquo;s hosted on Github, so I would need to build the blog then transfer over the files to the new repo, to begin deploying it to the webs.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>cd /tmp/gh <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Cloning </span><span style=color:#e6db74>${</span>GITHUB_WEBSITE_REPOSITORY<span style=color:#e6db74>}</span><span style=color:#e6db74> repo...&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>rm -rf mohseenrm.github.io
+</span></span><span style=display:flex><span>git clone <span style=color:#e6db74>&#34;</span>$CLONE_WEBSITE_REPO_URL<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Cleaning up old assets...&#34;</span>
+</span></span><span style=display:flex><span>cd mohseenrm.github.io <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>rm -rf about css authors fonts page js images scss post
+</span></span><span style=display:flex><span>rm index.xml index.html sitemap.xml
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Building website...&#34;</span>
+</span></span><span style=display:flex><span>cd /tmp/gh/website-v7 <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>hugo --gc --minify --destination /tmp/gh/mohseenrm.github.io
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Copying assets...&#34;</span>
+</span></span><span style=display:flex><span>cp -r /tmp/gh/mohseenrm.github.io/public/* /tmp/gh/mohseenrm.github.io
+</span></span><span style=display:flex><span>rm -rf /tmp/gh/mohseenrm.github.io/public
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Committing changes...&#34;</span>
+</span></span><span style=display:flex><span>cd /tmp/gh/mohseenrm.github.io <span style=color:#f92672>||</span> exit <span style=color:#ae81ff>127</span>
+</span></span><span style=display:flex><span>git add .
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>git config user.email <span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>
+</span></span><span style=display:flex><span>git config user.name <span style=color:#e6db74>&#34;mohseenrm&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;Publishing new blog post&#34;</span>
+</span></span><span style=display:flex><span>git push origin master
+</span></span></code></pre></div><p>Done! 🚀 Finally let&rsquo;s send a notification email to let us know it was successful.</p><p>In order to pass data from <code>BashOperator</code> to a Python task, we would need to echo some sort of result.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>BLOG_URL<span style=color:#f92672>=(</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>BLOG_FILENAME%%.*<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span><span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;https://mohseen.dev/post/</span><span style=color:#e6db74>${</span>BLOG_URL<span style=color:#e6db74>}</span><span style=color:#e6db74>@</span><span style=color:#e6db74>${</span>BLOG_TITLE<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span></code></pre></div><p>Great, lastly I used <a href=https://sendgrid.com/>Sendgrid</a> to send emails, but you can use any email provider you like.
+It was pretty smooth sailing from here on out. Let&rsquo;s fetch the needed <code>ENV</code> variables and send this sucker to the inbox.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;send_success_email&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>send_success_email</span>(ti<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+</span></span><span style=display:flex><span>        context <span style=color:#f92672>=</span> ti<span style=color:#f92672>.</span>xcom_pull(task_ids<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;publish_blog_post&#34;</span>)
+</span></span><span style=display:flex><span>        content <span style=color:#f92672>=</span> context<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#34;@&#34;</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>assert</span> len(content) <span style=color:#f92672>==</span> <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>        url, title <span style=color:#f92672>=</span> content[<span style=color:#ae81ff>0</span>], content[<span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>capitalize_words</span>(s):
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> re<span style=color:#f92672>.</span>sub(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#34;\w+&#34;</span>, <span style=color:#66d9ef>lambda</span> m: m<span style=color:#f92672>.</span>group(<span style=color:#ae81ff>0</span>)<span style=color:#f92672>.</span>capitalize(), s)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        title <span style=color:#f92672>=</span> capitalize_words(title)<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;-&#34;</span>, <span style=color:#e6db74>&#34; &#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        message <span style=color:#f92672>=</span> Mail(
+</span></span><span style=display:flex><span>            from_email<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-publisher@mohseen.dev&#34;</span>,
+</span></span><span style=display:flex><span>            to_emails<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>],
+</span></span><span style=display:flex><span>        )
+</span></span><span style=display:flex><span>        message<span style=color:#f92672>.</span>dynamic_template_data <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;title&#34;</span>: title,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;blog_post_url&#34;</span>: url,
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        message<span style=color:#f92672>.</span>template_id <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_SUCCESS_TEMPLATE&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>try</span>:
+</span></span><span style=display:flex><span>            sg <span style=color:#f92672>=</span> SendGridAPIClient(Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_API_KEY&#34;</span>))
+</span></span><span style=display:flex><span>            response <span style=color:#f92672>=</span> sg<span style=color:#f92672>.</span>send(message)
+</span></span><span style=display:flex><span>            code, body, headers <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>status_code, response<span style=color:#f92672>.</span>body, response<span style=color:#f92672>.</span>headers
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Response code: </span><span style=color:#e6db74>{</span>code<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Response headers: </span><span style=color:#e6db74>{</span>headers<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Response body: </span><span style=color:#e6db74>{</span>body<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;Success Message Sent!&#34;</span>)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> str(response<span style=color:#f92672>.</span>status_code)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>Exception</span> <span style=color:#66d9ef>as</span> e:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;Error: </span><span style=color:#e6db74>{0}</span><span style=color:#e6db74>&#34;</span><span style=color:#f92672>.</span>format(e))
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>raise</span> e
+</span></span></code></pre></div><p>This is an ideal scenario where nothing ever goes wrong. Luckily for us, we can configure Airflow to trigger a different task if any of the previous task fails.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;send_failure_email&#34;</span>, trigger_rule<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;one_failed&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>send_failure_email</span>(ti<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>):
+</span></span><span style=display:flex><span>        message <span style=color:#f92672>=</span> Mail(
+</span></span><span style=display:flex><span>            from_email<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-publisher@mohseen.dev&#34;</span>,
+</span></span><span style=display:flex><span>            to_emails<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#34;some-email@gmail.com&#34;</span>],
+</span></span><span style=display:flex><span>        )
+</span></span><span style=display:flex><span>        message<span style=color:#f92672>.</span>template_id <span style=color:#f92672>=</span> Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_FAILURE_TEMPLATE&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>try</span>:
+</span></span><span style=display:flex><span>            sg <span style=color:#f92672>=</span> SendGridAPIClient(Variable<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;SENDGRID_API_KEY&#34;</span>))
+</span></span><span style=display:flex><span>            response <span style=color:#f92672>=</span> sg<span style=color:#f92672>.</span>send(message)
+</span></span><span style=display:flex><span>            code, body, headers <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>status_code, response<span style=color:#f92672>.</span>body, response<span style=color:#f92672>.</span>headers
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Response code: </span><span style=color:#e6db74>{</span>code<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Response headers: </span><span style=color:#e6db74>{</span>headers<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Response body: </span><span style=color:#e6db74>{</span>body<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;Failure Message Sent!&#34;</span>)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> str(response<span style=color:#f92672>.</span>status_code)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>Exception</span> <span style=color:#66d9ef>as</span> e:
+</span></span><span style=display:flex><span>            print(<span style=color:#e6db74>&#34;Error: </span><span style=color:#e6db74>{0}</span><span style=color:#e6db74>&#34;</span><span style=color:#f92672>.</span>format(e))
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>raise</span> e
+</span></span></code></pre></div><p>All that&rsquo;s left is to define the fallback task in relation to the previous tasks, so that it can catch failures and send me a fun email.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>send_failure_email <span style=color:#f92672>&gt;&gt;</span> end
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Setup fallback for failure</span>
+</span></span><span style=display:flex><span>pick_topic <span style=color:#f92672>&gt;&gt;</span> [call_gpt, send_failure_email]
+</span></span><span style=display:flex><span>call_gpt <span style=color:#f92672>&gt;&gt;</span> [process_blog_post, send_failure_email]
+</span></span><span style=display:flex><span>process_blog_post <span style=color:#f92672>&gt;&gt;</span> [fetch_images, send_failure_email]
+</span></span><span style=display:flex><span>fetch_images <span style=color:#f92672>&gt;&gt;</span> [process_images, send_failure_email]
+</span></span><span style=display:flex><span>process_images <span style=color:#f92672>&gt;&gt;</span> [run, send_failure_email]
+</span></span><span style=display:flex><span>run <span style=color:#f92672>&gt;&gt;</span> [send_success_email, send_failure_email]
+</span></span><span style=display:flex><span>send_success_email <span style=color:#f92672>&gt;&gt;</span> end
+</span></span></code></pre></div><p>Here&rsquo;s a visual representation of the DAG we just defined.</p><div class=Image__Medium><img src=/images/gpt-2.png alt="alt text for large image"></div><p>The key part of the fallback task is the <code>trigger_rule</code>. It only runs if any of the parent tasks fails. This is a great way to handle failures and send notifications to the relevant parties.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@task</span>(task_id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;send_failure_email&#34;</span>, trigger_rule<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;one_failed&#34;</span>)
+</span></span></code></pre></div><p>Aiflow let&rsquo;s you <a href=https://airflow.apache.org/docs/apache-airflow/1.10.10/concepts.html#trigger-rules>configure different rules</a> for triggering tasks based on the state of the previous tasks.
+It&rsquo;s pretty nifty and now my go-to anytime I need to automate something.</p><p>Once Airflow and GPT have done their magic, I get a nice email with the link to the blog post.</p><div class=Image__Medium><img src=/images/gpt-3.png alt="alt text for large image"></div><p>All I got to do is review it, make any changes and publish it. I can also trigger this manually from the UI if I&rsquo;m feeling lucky.</p><h2 id=conclusion>Conclusion</h2><p>This was a fun experiment, and I&rsquo;m glad I got to learn a lot about Airflow and GPT-4. I&rsquo;m sure there are a lot of ways to improve this, but for now I&rsquo;m happily letting it crunch a few posts on my blog.</p><hr><p>Image credits: <a href=https://unsplash.com/>Unsplash</a></p></article><section id=articleNext class="section nartrow"><h3 class=footer-next-heading>More articles from Mohseen</h3><div class=footer-spacer></div><div class=next-articles-grid numberofarticles={numberOfArticles}><div class=post-row><a href=/post/2023-10-03-master-the-code-beast-an-absolute-guide-to-profiling-in-nodejs/ class=article-link id=article-link-bigger><div><div class=image-container><img src=/images/hero/master-the-code-beast-an-absolute-guide-to-profiling-in-nodejs.preview.jpg class=article-image></div><div><h2 class=article-title>Master the Code Beast: An Absolute Guide to Profiling in NodeJS</h2><p class=article-excerpt>Fine-tuning your Node.js application's performance has never been easier. Dive deep into profiling your Node.js applications and reveal the secret behind peak performing servers.</p><div class=article-metadata>October 3, 2023 · 3 min read</div></div></div></a><a href=/post/2023-10-03-unveiling-the-art-of-advanced-bash-scripting/ class=article-link><div><div class=image-container><img src=/images/hero/unveiling-the-art-of-advanced-bash-scripting.preview.jpg class=article-image></div><div><h2 class=article-title>Unveiling the Art of Advanced Bash Scripting</h2><p class=article-excerpt>Deep dive into the intriguing world of Bash scripting to automate your tasks, optimize code, and bootstrap your journey with advanced code writing skills.</p><div class=article-metadata>October 3, 2023 · 3 min read</div></div></div></a></div></div></section></section><script src=/js/progressBar.js></script><div class=footer-gradient></div><div class="section narrow"><div class=footer-hr></div><div class=footer-container><div class=footer-text>© 2025 Mohseen</div><div class=social-icon-outer><div class=social-icon-container></div></div></div></div></div><script src=/js/prism.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-WBJ981VMT6"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-WBJ981VMT6")}</script></body></html>
